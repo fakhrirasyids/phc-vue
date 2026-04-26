@@ -2,100 +2,163 @@
   <header class="fixed inset-x-0 top-0 z-[110]">
     <div
       class="transition-all duration-300 ease-out"
-      :class="scrolled ? 'bg-black shadow-[0_2px_20px_rgba(0,0,0,0.4)]' : 'bg-transparent'"
+      :class="headerBgClass"
     >
-      <nav class="px-4 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-4 md:py-5">
+      <nav class="px-4 sm:px-6 lg:px-10 py-4 lg:py-5">
         <div class="max-w-[1280px] mx-auto flex items-center justify-between gap-4">
           <!-- Logo -->
           <button
             class="flex items-center flex-shrink-0"
             @click="emit('navigate', 'home')"
+            aria-label="8xPet home"
           >
-            <img
-              :src="imgLogo"
-              alt="GTTNano"
-              class="h-9 md:h-10 w-auto"
-            />
+            <img :src="logo" alt="8xPet" class="h-9 sm:h-10 lg:h-11 w-auto" />
           </button>
 
           <!-- Desktop nav -->
-          <div class="hidden lg:flex items-center gap-8 xl:gap-10">
+          <div class="hidden lg:flex items-center gap-9 xl:gap-11">
             <button
-              class="text-[15px] font-medium tracking-[0.2px] whitespace-nowrap transition-colors duration-200"
-              :class="currentPage === 'home' ? 'text-[#009689]' : 'text-white hover:text-white/80'"
+              class="text-[15px] font-medium tracking-[0.2px] whitespace-nowrap transition-colors"
+              :class="navLinkClass('home')"
               @click="emit('navigate', 'home')"
-            >
-              Home
-            </button>
+            >Home</button>
 
             <button
-              class="text-[15px] font-medium tracking-[0.2px] whitespace-nowrap transition-colors duration-200"
-              :class="currentPage === 'about' ? 'text-[#009689]' : 'text-white hover:text-white/80'"
+              class="text-[15px] font-medium tracking-[0.2px] whitespace-nowrap transition-colors"
+              :class="navLinkClass('about')"
               @click="emit('navigate', 'about')"
-            >
-              About Company
-            </button>
+            >About Company</button>
 
-            <!-- Product Pipeline dropdown -->
-            <div class="relative" ref="pipelineRef">
+            <!-- Products dropdown -->
+            <div class="relative" ref="productsRef">
               <button
-                class="flex items-center gap-1.5 text-[15px] font-medium tracking-[0.2px] whitespace-nowrap transition-colors duration-200"
-                :class="isPipelinePage ? 'text-[#009689]' : 'text-white hover:text-white/80'"
-                @click="togglePipeline"
+                class="flex items-center gap-1.5 text-[15px] font-medium tracking-[0.2px] whitespace-nowrap transition-colors"
+                :class="currentPage === 'products' ? 'text-brand-400' : navTextClass"
+                @click="toggleProducts"
               >
-                Product Pipeline
+                Products
                 <svg
                   class="h-4 w-4 transition-transform duration-200"
-                  :class="pipelineOpen ? 'rotate-180' : ''"
+                  :class="productsOpen ? 'rotate-180' : ''"
                   viewBox="0 0 20 20" fill="currentColor"
                 >
                   <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 111.06 1.06l-4.24 4.25a.75.75 0 01-1.06 0L5.21 8.29a.75.75 0 01.02-1.08z" clip-rule="evenodd" />
                 </svg>
               </button>
 
-              <!-- Dropdown -->
               <Transition name="dropdown">
                 <div
-                  v-if="pipelineOpen"
-                  class="absolute top-full left-1/2 -translate-x-1/2 mt-3 w-[560px] rounded-2xl bg-white shadow-[0_20px_60px_rgba(0,0,0,0.18)] border border-black/8 overflow-hidden"
+                  v-if="productsOpen"
+                  class="absolute top-full left-1/2 -translate-x-1/2 mt-7 w-[1280px] max-w-[calc(100vw-128px)] rounded-[22px] bg-white shadow-[0_30px_80px_rgba(8,20,42,0.18)] border border-black/5 overflow-hidden"
                 >
-                  <div class="p-4 grid grid-cols-2 gap-3">
-                    <button
-                      v-for="item in pipelineItems"
-                      :key="item.page"
-                      class="flex gap-3 items-start p-3 rounded-xl hover:bg-gray-50 transition-colors text-left group"
-                      @click="goToPipeline(item.page)"
-                    >
-                      <div class="w-16 h-14 rounded-lg overflow-hidden flex-shrink-0 border border-black/8">
-                        <img :src="item.image" :alt="item.title" class="w-full h-full object-cover" />
-                      </div>
+                  <div class="grid grid-cols-12">
+                    <div class="col-span-9 p-9 grid grid-cols-4 gap-x-9 gap-y-6">
                       <div>
-                        <p class="font-semibold text-[13px] text-[#101828] group-hover:text-[#009689] transition-colors leading-tight">{{ item.title }}</p>
-                        <p class="text-[12px] text-[#475467] mt-1 leading-snug">{{ item.desc }}</p>
+                        <p class="text-[13px] font-semibold tracking-[1.9px] text-brand-600 mb-7">DIAGNOSTIC DEVICES</p>
+                        <ul class="space-y-7">
+                          <li v-for="item in diagnosticItems" :key="item.title">
+                            <button class="flex items-start gap-4 text-left group" @click="goProducts">
+                              <span class="mt-1 text-brand-600">
+                                <component :is="item.icon" class="h-5 w-5" />
+                              </span>
+                              <span>
+                                <span class="block text-[16px] font-semibold text-ink leading-tight group-hover:text-brand-600 transition-colors">{{ item.title }}</span>
+                                <span class="block text-[14px] text-slate-500 mt-2 leading-snug">{{ item.desc }}</span>
+                              </span>
+                            </button>
+                          </li>
+                        </ul>
                       </div>
-                    </button>
+
+                      <div>
+                        <p class="text-[13px] font-semibold tracking-[1.9px] text-brand-600 mb-7">IMAGING & HARDWARE</p>
+                        <ul class="space-y-7">
+                          <li>
+                            <button class="flex items-start gap-4 text-left group" @click="goProducts">
+                              <span class="mt-1 text-brand-600">
+                                <ScanIcon class="h-5 w-5" />
+                              </span>
+                              <span>
+                                <span class="block text-[16px] font-semibold text-ink leading-tight group-hover:text-brand-600 transition-colors">X-Ray Device for Pets</span>
+                                <span class="block text-[14px] text-slate-500 mt-2 leading-snug">Next-generation digital</span>
+                              </span>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div>
+                        <p class="text-[13px] font-semibold tracking-[1.9px] text-brand-600 mb-7">SMART SYSTEMS</p>
+                        <ul class="space-y-7">
+                          <li>
+                            <button class="flex items-start gap-4 text-left group" @click="goProducts">
+                              <span class="mt-1 text-brand-600">
+                                <MonitorIcon class="h-5 w-5" />
+                              </span>
+                              <span>
+                                <span class="block text-[16px] font-semibold text-ink leading-tight group-hover:text-brand-600 transition-colors">Pet Health Kiosk</span>
+                                <span class="block text-[14px] text-slate-500 mt-2 leading-snug">An automated intake and</span>
+                              </span>
+                            </button>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="bg-slate-50 -m-9 ml-0 p-9">
+                        <p class="text-[13px] font-semibold tracking-[1.9px] text-brand-600 mb-8">PLATFORM</p>
+                        <ul class="space-y-6">
+                          <li>
+                            <button class="text-left group" @click="goProducts">
+                              <span class="block text-[16px] font-semibold text-ink leading-tight group-hover:text-brand-600 transition-colors">CRO for Pets</span>
+                              <span class="block text-[14px] text-slate-500 mt-2 leading-snug">The integrated software core connecting all</span>
+                            </button>
+                          </li>
+                          <li>
+                            <button class="text-left group" @click="goProducts">
+                              <span class="block text-[16px] font-semibold text-ink leading-tight group-hover:text-brand-600 transition-colors">Vetenerary Booking System</span>
+                              <span class="block text-[14px] text-slate-500 mt-2 leading-snug">Explore specific assays and clinical use cases.</span>
+                            </button>
+                          </li>
+                        </ul>
+
+                        <button
+                          class="mt-10 inline-flex items-center gap-3 text-[16px] font-semibold text-brand-600 hover:text-brand-700"
+                          @click="goProducts"
+                        >
+                          View all products
+                          <ArrowRightIcon class="h-5 w-5" />
+                        </button>
+                      </div>
+                    </div>
+
+                    <div class="col-span-3 relative bg-white p-9">
+                      <img
+                        :src="dogImg"
+                        alt="Veterinary care"
+                        class="h-full w-full rounded-[24px] object-cover"
+                      />
+                    </div>
                   </div>
                 </div>
               </Transition>
             </div>
 
             <button
-              class="text-[15px] font-medium tracking-[0.2px] whitespace-nowrap transition-colors duration-200"
-              :class="currentPage === 'contact' ? 'text-[#009689]' : 'text-white hover:text-white/80'"
-              @click="emit('navigate', 'contact')"
-            >
-              Contact Us
-            </button>
+              class="text-[15px] font-medium tracking-[0.2px] whitespace-nowrap transition-colors"
+              :class="navLinkClass('use-cases')"
+              @click="emit('navigate', 'use-cases')"
+            >Use Cases</button>
           </div>
 
-          <!-- Right side: language + hamburger -->
+          <!-- Right -->
           <div class="flex items-center gap-3">
             <div class="hidden md:block">
-              <LanguageDropdown theme="light" />
+              <LanguageDropdown :theme="languageTheme" />
             </div>
 
             <button
-              class="lg:hidden p-2 text-white"
+              class="lg:hidden p-2 rounded-md transition-colors"
+              :class="hamburgerClass"
               aria-label="Open navigation"
               @click="drawerOpen = true"
             >
@@ -106,11 +169,10 @@
       </nav>
     </div>
 
-    <!-- Mobile drawer -->
-    <MobileDrawerGtt
+    <MobileDrawer
       v-model="drawerOpen"
       :current-page="currentPage"
-      :logo="imgLogo"
+      :logo="logo"
       @navigate="handleMobileNav"
     />
   </header>
@@ -118,21 +180,24 @@
 
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
-import { Menu as MenuIcon } from 'lucide-vue-next'
+import {
+  Menu as MenuIcon,
+  Activity as ActivityIcon,
+  Scan as ScanIcon,
+  Monitor as MonitorIcon,
+  Beaker as BeakerIcon,
+  TestTube as TestTubeIcon,
+  Box as BoxIcon,
+  ArrowRight as ArrowRightIcon,
+} from 'lucide-vue-next'
 import LanguageDropdown from '@/components/LanguageDropdown.vue'
-import MobileDrawerGtt from '@/components/MobileDrawerGtt.vue'
-import imgLogo from '@/assets/gtt/09100268d4e53aba4728250212eca777cd8fb25b.png'
-
-import heroSlide02 from '@/assets/gtt/c0ab7a1d4dda2bd0ad42477b59706868447935b6.png'
-import heroSlide03 from '@/assets/gtt/96f118309c104bbe9320c0a3eec34d6a987a4d08.png'
-import heroSlide04 from '@/assets/gtt/5d65a2acd9cbca36d942b6f6bd3cd48054e18b26.jpg'
-import imgNext from '@/assets/gtt/9c9ace973e69ea70ca9c9ac8c5ee50d97b45ef8b.png'
+import MobileDrawer from '@/components/MobileDrawer.vue'
+import logo from '@/assets/pet/8xpet-logo.png'
+import dogImg from '@/assets/pet/dog.png'
 
 import type { PageName } from '@/App.vue'
 
-const props = defineProps<{
-  currentPage: PageName
-}>()
+const props = defineProps<{ currentPage: PageName }>()
 
 const emit = defineEmits<{
   (e: 'navigate', page: PageName): void
@@ -140,47 +205,46 @@ const emit = defineEmits<{
 
 const scrolled = ref(false)
 const drawerOpen = ref(false)
-const pipelineOpen = ref(false)
-const pipelineRef = ref<HTMLElement | null>(null)
+const productsOpen = ref(false)
+const productsRef = ref<HTMLElement | null>(null)
 
-const isPipelinePage = computed(() =>
-  ['gttn-dx', 'gttn-navi', 'gttn-tx'].includes(props.currentPage)
+const isOnDarkHero = computed(() =>
+  props.currentPage === 'home' && !scrolled.value
 )
 
-const pipelineItems = [
-  {
-    page: 'gttn-dx' as PageName,
-    title: 'GTTN-Dx / GTTN-SCI',
-    desc: 'For Cancer Early Screening and Research Use. cFDA registered and commercially available.',
-    image: heroSlide02,
-  },
-  {
-    page: 'gttn-navi' as PageName,
-    title: 'GTTN-Navi',
-    desc: 'For Cancer Early Screening and Research Use. cFDA registered and commercially available.',
-    image: heroSlide03,
-  },
-  {
-    page: 'gttn-tx' as PageName,
-    title: 'GTTN-Tx',
-    desc: 'Drug-device combination under innovative device review, projected approval by 2029.',
-    image: heroSlide04,
-  },
-  {
-    page: 'home' as PageName,
-    title: 'Next in Line',
-    desc: 'Lymphatic tumor navigation, CT/MRI contrast agents, and radiopharmaceutical carriers.',
-    image: imgNext,
-  },
-]
+const headerBgClass = computed(() => {
+  if (scrolled.value) return 'bg-ink-950/95 backdrop-blur-md shadow-[0_2px_20px_rgba(6,17,30,0.4)]'
+  if (isOnDarkHero.value) return 'bg-transparent'
+  return 'bg-ink-950'
+})
 
-function togglePipeline() {
-  pipelineOpen.value = !pipelineOpen.value
+const navTextClass = computed(() => 'text-white hover:text-white/80')
+
+function navLinkClass(page: PageName) {
+  return props.currentPage === page ? 'text-brand-400' : navTextClass.value
 }
 
-function goToPipeline(page: PageName) {
-  pipelineOpen.value = false
-  emit('navigate', page)
+const languageTheme = computed<'light' | 'dark'>(() => {
+  return scrolled.value || isOnDarkHero.value ? 'dark' : 'light'
+})
+
+const hamburgerClass = computed(() => 'text-white hover:bg-white/10')
+
+const diagnosticItems = [
+  { title: 'PCR Molecular Diagnostics', desc: 'Advanced PCR testing', icon: BeakerIcon },
+  { title: 'Lateral Flow Rapid Test', desc: 'Compact and reliable', icon: TestTubeIcon },
+  { title: 'Mini Cube Analyzer', desc: 'A revolutionary', icon: BoxIcon },
+]
+
+void ActivityIcon
+
+function toggleProducts() {
+  productsOpen.value = !productsOpen.value
+}
+
+function goProducts() {
+  productsOpen.value = false
+  emit('navigate', 'products')
 }
 
 function handleMobileNav(page: PageName) {
@@ -193,8 +257,8 @@ function onScroll() {
 }
 
 function onDocClick(e: MouseEvent) {
-  if (pipelineRef.value && !pipelineRef.value.contains(e.target as Node)) {
-    pipelineOpen.value = false
+  if (productsRef.value && !productsRef.value.contains(e.target as Node)) {
+    productsOpen.value = false
   }
 }
 

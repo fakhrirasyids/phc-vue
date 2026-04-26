@@ -192,9 +192,29 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background: #ffffff;
-  color: #101828;
+  color: #0F1B2D;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   text-decoration: none;
 }
+
+.text-gradient-brand {
+  background: linear-gradient(90deg, #2DD4BF 0%, #5EEAD4 60%, #2DD4BF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-grid-soft {
+  background-image:
+    linear-gradient(to right, rgba(15, 27, 45, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(15, 27, 45, 0.04) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
