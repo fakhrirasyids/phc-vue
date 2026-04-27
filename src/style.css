@@ -241,7 +241,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", "Poppins", system-ui, sans-serif;
   background: #ffffff;
   color: #0F1B2D;
   -webkit-font-smoothing: antialiased;

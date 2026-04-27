@@ -263,7 +263,7 @@ import icSmart from '@/assets/pet/ic_smart_system.png'
 import dev1 from '@/assets/pet/dev1.png'
 import dev2 from '@/assets/pet/dev2.png'
 import dev3 from '@/assets/pet/dev3.png'
-import dev4 from '@/assets/pet/dev4.png'
+import dev4 from '@/assets/pet/xraydevicelist.jpeg'
 import dev5 from '@/assets/pet/dev5.png'
 import dev6 from '@/assets/pet/dev6.png'
 
