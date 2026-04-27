@@ -56,16 +56,16 @@
                   v-for="p in productItems"
                   :key="p.label"
                   class="text-left py-2 text-[14px] text-white/75 hover:text-white transition-colors"
-                  @click="navigate('products')"
+                  @click="navigate(p.page)"
                 >{{ p.label }}</button>
               </div>
             </div>
 
             <button
               class="text-left py-3 text-[15px] font-medium transition-colors"
-              :class="currentPage === 'use-cases' ? 'text-brand-400' : 'text-white/90 hover:text-white'"
-              @click="navigate('use-cases')"
-            >Use Cases</button>
+              :class="currentPage === 'contact' ? 'text-brand-400' : 'text-white/90 hover:text-white'"
+              @click="navigate('contact')"
+            >Contact Us</button>
 
             <div class="mt-4 border-t border-white/10 pt-4">
               <LanguageDropdown align="left" theme="light" class="w-full" />
@@ -82,6 +82,7 @@ import { ref, watch, nextTick, onMounted, onBeforeUnmount } from 'vue'
 import { X as XIcon } from 'lucide-vue-next'
 import LanguageDropdown from '@/components/LanguageDropdown.vue'
 import type { PageName } from '@/App.vue'
+import { productNavItems } from '@/data/productCatalog'
 
 const props = defineProps<{
   modelValue: boolean
@@ -96,16 +97,7 @@ const emit = defineEmits<{
 
 const isActive = ref(false)
 const productsOpen = ref(false)
-
-const productItems = [
-  { label: 'PCR Molecular Diagnostics' },
-  { label: 'Lateral Flow Rapid Test' },
-  { label: 'Mini Cube Analyzer' },
-  { label: 'X-Ray Device for Pets' },
-  { label: 'Pet Health Kiosk' },
-  { label: 'CRO for Pets' },
-  { label: 'Veterinary Booking System' },
-]
+const productItems = productNavItems
 
 function close() {
   emit('update:modelValue', false)

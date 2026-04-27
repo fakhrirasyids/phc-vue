@@ -2,7 +2,7 @@
   <div>
     <!-- Hero with full-width image -->
     <section class="relative bg-ink-950 pt-[72px] lg:pt-[84px]">
-      <div class="relative w-full h-[46vh] sm:h-[56vh] max-h-[560px] min-h-[320px]">
+      <div class="relative w-full h-[420px] sm:h-[500px] lg:h-[560px]">
         <img
           :src="aboutHero"
           alt="Veterinarians caring for a dog"
@@ -12,7 +12,7 @@
     </section>
 
     <!-- About copy -->
-    <section class="bg-white pt-10 sm:pt-16 lg:pt-20 pb-16 sm:pb-20 lg:pb-24">
+    <section class="bg-slate-50 pt-14 sm:pt-16 lg:pt-20 pb-14 sm:pb-16 lg:pb-20">
       <div class="max-w-[1080px] mx-auto px-5 sm:px-6 lg:px-10 text-center">
         <p class="text-[12px] font-semibold tracking-[2px] text-brand-500 uppercase">About Us</p>
         <h1 class="mt-3 font-bold text-ink text-[28px] sm:text-[36px] lg:text-[44px] leading-[1.15] tracking-[-0.01em]">
@@ -25,11 +25,11 @@
     </section>
 
     <!-- Mission & Vision -->
-    <section class="bg-white pb-16 sm:pb-20 lg:pb-24">
+    <section class="bg-white py-16 sm:py-20 lg:py-24">
       <div class="max-w-[1080px] mx-auto px-5 sm:px-6 lg:px-10 grid grid-cols-1 md:grid-cols-2 gap-5 lg:gap-7">
-        <div class="rounded-[22px] bg-slate-50 border border-slate-100 p-7 sm:p-10">
-          <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center">
-            <TargetIcon class="h-6 w-6 text-brand-600" />
+        <div class="rounded-[18px] bg-slate-50 border border-slate-100 p-7 sm:p-10 lg:p-11">
+          <div class="w-10 h-10 flex items-center justify-center">
+            <TargetIcon class="h-8 w-8 text-brand-600" />
           </div>
           <h3 class="mt-12 font-bold text-ink text-[20px] sm:text-[22px]">Our Mission</h3>
           <p class="mt-3 text-slate-500 text-[14px] sm:text-[15px] leading-[1.7]">
@@ -37,9 +37,9 @@
           </p>
         </div>
 
-        <div class="rounded-[22px] bg-slate-50 border border-slate-100 p-7 sm:p-10">
-          <div class="w-12 h-12 rounded-xl bg-brand-50 flex items-center justify-center">
-            <ShieldIcon class="h-6 w-6 text-brand-600" />
+        <div class="rounded-[18px] bg-slate-50 border border-slate-100 p-7 sm:p-10 lg:p-11">
+          <div class="w-10 h-10 flex items-center justify-center">
+            <ShieldIcon class="h-8 w-8 text-brand-600" />
           </div>
           <h3 class="mt-12 font-bold text-ink text-[20px] sm:text-[22px]">Our Vision</h3>
           <p class="mt-3 text-slate-500 text-[14px] sm:text-[15px] leading-[1.7]">
@@ -68,7 +68,7 @@ import { Target as TargetIcon, Shield as ShieldIcon } from 'lucide-vue-next'
 import aboutHero from '@/assets/pet/bgheader.png'
 
 defineEmits<{
-  (e: 'navigate', page: 'home' | 'about' | 'products' | 'use-cases'): void
+  (e: 'navigate', page: 'home' | 'about' | 'products' | 'contact'): void
 }>()
 
 const stats = [

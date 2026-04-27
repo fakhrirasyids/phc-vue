@@ -6,7 +6,14 @@
       <HomePage v-if="currentPage === 'home'" @navigate="navigateTo" />
       <AboutPage v-else-if="currentPage === 'about'" @navigate="navigateTo" />
       <ProductsPage v-else-if="currentPage === 'products'" @navigate="navigateTo" />
-      <UseCasesPage v-else-if="currentPage === 'use-cases'" @navigate="navigateTo" />
+      <ContactPage v-else-if="currentPage === 'contact'" @navigate="navigateTo" />
+      <ProductDetailPage v-else-if="activeProductDetailPage" :page="activeProductDetailPage" @navigate="navigateTo" />
+      <ComingSoonPage
+        v-else-if="activeProductTitle"
+        :title="activeProductTitle"
+        @navigate="navigateTo"
+      />
+      <ProductsPage v-else @navigate="navigateTo" />
     </main>
 
     <Footer @navigate="navigateTo" />
@@ -14,21 +21,64 @@
 </template>
 
 <script setup lang="ts">
-import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
 import Header from '@/components/Header.vue'
 import Footer from '@/components/Footer.vue'
 import HomePage from '@/pages/HomePage.vue'
 import AboutPage from '@/pages/AboutPage.vue'
 import ProductsPage from '@/pages/ProductsPage.vue'
-import UseCasesPage from '@/pages/UseCasesPage.vue'
+import ContactPage from '@/pages/ContactPage.vue'
+import ProductDetailPage from '@/pages/ProductDetailPage.vue'
+import ComingSoonPage from '@/pages/ComingSoonPage.vue'
+import {
+  comingSoonProducts,
+  productDetailPages,
+  productPageNames,
+  type ProductDetailPageName,
+  type ProductPageName,
+} from '@/data/productCatalog'
 
-export type PageName = 'home' | 'about' | 'products' | 'use-cases'
+type BasePageName = 'home' | 'about' | 'products' | 'contact'
+export type PageName = BasePageName | ProductPageName
 
-const pages: PageName[] = ['home', 'about', 'products', 'use-cases']
+const pages: PageName[] = ['home', 'about', 'products', 'contact', ...productPageNames]
+
+const productAliases: Record<string, ProductPageName> = {
+  pcr: 'product-pcr',
+  'pcr-product': 'product-pcr',
+  'pcr-molecular-diagnostics': 'product-pcr',
+  'product-pcr-molecular-diagnostics': 'product-pcr',
+  lateral: 'product-lateral-flow',
+  'lateral-flow': 'product-lateral-flow',
+  'lateral-flow-rapid-test': 'product-lateral-flow',
+  'product-lateral-flow-rapid-test': 'product-lateral-flow',
+  xray: 'product-xray',
+  'x-ray': 'product-xray',
+  'x-ray-device-for-pets': 'product-xray',
+  'product-x-ray-device-for-pets': 'product-xray',
+  'mini-cube': 'product-mini-cube',
+  'mini-cube-analyzer': 'product-mini-cube',
+  kiosk: 'product-pet-health-kiosk',
+  'pet-health-kiosk': 'product-pet-health-kiosk',
+  cro: 'product-cro',
+  booking: 'product-booking',
+  'veterinary-booking-system': 'product-booking',
+}
+
+function normalizeProductPage(value: string): ProductPageName | undefined {
+  if ((productPageNames as readonly string[]).includes(value)) return value as ProductPageName
+  return productAliases[value]
+}
+
+function normalizePage(value: string): PageName {
+  const productPage = normalizeProductPage(value)
+  if (productPage) return productPage
+  if (value === 'use-cases') return 'contact'
+  return pages.includes(value as PageName) ? (value as PageName) : 'home'
+}
 
 function pageFromHash(): PageName {
-  const value = window.location.hash.replace('#', '')
-  return pages.includes(value as PageName) ? (value as PageName) : 'home'
+  return normalizePage(window.location.hash.replace('#', ''))
 }
 
 const currentPage = ref<PageName>(pageFromHash())
@@ -46,6 +96,20 @@ watch(currentPage, () => {
 function onHashChange() {
   currentPage.value = pageFromHash()
 }
+
+const activeProductPage = computed<ProductPageName | undefined>(() => {
+  return normalizeProductPage(currentPage.value)
+})
+
+const activeProductDetailPage = computed<ProductDetailPageName | undefined>(() => {
+  const page = activeProductPage.value
+  return page && (productDetailPages as readonly string[]).includes(page) ? (page as ProductDetailPageName) : undefined
+})
+
+const activeProductTitle = computed(() => {
+  const page = activeProductPage.value
+  return page && !activeProductDetailPage.value ? comingSoonProducts[page] : ''
+})
 
 onMounted(() => window.addEventListener('hashchange', onHashChange))
 onBeforeUnmount(() => window.removeEventListener('hashchange', onHashChange))

@@ -14,8 +14,8 @@
         <div>
           <h2 class="text-[15px] font-semibold text-white">Products</h2>
           <ul class="mt-5 space-y-4 text-[13px] text-slate-400">
-            <li v-for="item in products" :key="item">
-              <button class="hover:text-white transition-colors text-left" @click="$emit('navigate', 'products')">{{ item }}</button>
+            <li v-for="item in products" :key="item.title">
+              <button class="hover:text-white transition-colors text-left" @click="$emit('navigate', item.page)">{{ item.title }}</button>
             </li>
           </ul>
         </div>
@@ -25,7 +25,7 @@
           <ul class="mt-5 space-y-4 text-[13px] text-slate-400">
             <li><button class="hover:text-white transition-colors" @click="$emit('navigate', 'about')">About Us</button></li>
             <li><button class="hover:text-white transition-colors" @click="$emit('navigate', 'home')">Technology Platform</button></li>
-            <li><button class="hover:text-white transition-colors" @click="$emit('navigate', 'use-cases')">Applications</button></li>
+            <li><button class="hover:text-white transition-colors" @click="$emit('navigate', 'products')">Applications</button></li>
             <li><button class="hover:text-white transition-colors" @click="$emit('navigate', 'about')">Investors</button></li>
             <li><button class="hover:text-white transition-colors" @click="$emit('navigate', 'about')">Careers</button></li>
           </ul>
@@ -37,7 +37,7 @@
             <p>3 TAI SENG AVENUE, #04-36, TAI SENG EXCHANGE, Singapore 536465</p>
             <p>contact@8xpet.com</p>
             <p>+1 (800) 555-0199</p>
-            <button class="rounded-lg border border-white/15 px-4 py-2 text-white hover:bg-white/10 transition-colors">
+            <button class="rounded-lg border border-white/15 px-4 py-2 text-white hover:bg-white/10 transition-colors" @click="$emit('navigate', 'contact')">
               Contact Sales
             </button>
           </div>
@@ -59,16 +59,11 @@
 <script setup lang="ts">
 import logo from '@/assets/pet/8xpet-logo.png'
 import type { PageName } from '@/App.vue'
+import { productSummaries } from '@/data/productCatalog'
 
 defineEmits<{
   (e: 'navigate', page: PageName): void
 }>()
 
-const products = [
-  'PCR Molecular Diagnostics',
-  'Lateral Flow Rapid Test',
-  'Mini Cube Analyzer',
-  'X-Ray Device for Pets',
-  'Pet Health Kiosk',
-]
+const products = productSummaries.slice(0, 5)
 </script>

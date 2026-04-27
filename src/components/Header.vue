@@ -33,7 +33,7 @@
             <div class="relative" ref="productsRef">
               <button
                 class="flex items-center gap-1.5 text-[15px] font-medium tracking-[0.2px] whitespace-nowrap transition-colors"
-                :class="currentPage === 'products' ? 'text-brand-400' : navTextClass"
+                :class="isProductsActive ? 'text-brand-400' : navTextClass"
                 @click="toggleProducts"
               >
                 Products
@@ -49,7 +49,7 @@
               <Transition name="dropdown">
                 <div
                   v-if="productsOpen"
-                  class="absolute top-full left-1/2 -translate-x-1/2 mt-7 w-[1280px] max-w-[calc(100vw-128px)] rounded-[22px] bg-white shadow-[0_30px_80px_rgba(8,20,42,0.18)] border border-black/5 overflow-hidden"
+                  class="fixed left-1/2 top-[72px] lg:top-[84px] -translate-x-1/2 w-[calc(100vw-48px)] max-w-[1280px] rounded-[22px] bg-white shadow-[0_30px_80px_rgba(8,20,42,0.18)] border border-black/5 overflow-hidden"
                 >
                   <div class="grid grid-cols-12">
                     <div class="col-span-9 p-9 grid grid-cols-4 gap-x-9 gap-y-6">
@@ -57,7 +57,7 @@
                         <p class="text-[13px] font-semibold tracking-[1.9px] text-brand-600 mb-7">DIAGNOSTIC DEVICES</p>
                         <ul class="space-y-7">
                           <li v-for="item in diagnosticItems" :key="item.title">
-                            <button class="flex items-start gap-4 text-left group" @click="goProducts">
+                            <button class="flex items-start gap-4 text-left group" @click="goProduct(item.page)">
                               <span class="mt-1 text-brand-600">
                                 <component :is="item.icon" class="h-5 w-5" />
                               </span>
@@ -74,7 +74,7 @@
                         <p class="text-[13px] font-semibold tracking-[1.9px] text-brand-600 mb-7">IMAGING & HARDWARE</p>
                         <ul class="space-y-7">
                           <li>
-                            <button class="flex items-start gap-4 text-left group" @click="goProducts">
+                            <button class="flex items-start gap-4 text-left group" @click="goProduct('product-xray')">
                               <span class="mt-1 text-brand-600">
                                 <ScanIcon class="h-5 w-5" />
                               </span>
@@ -91,7 +91,7 @@
                         <p class="text-[13px] font-semibold tracking-[1.9px] text-brand-600 mb-7">SMART SYSTEMS</p>
                         <ul class="space-y-7">
                           <li>
-                            <button class="flex items-start gap-4 text-left group" @click="goProducts">
+                            <button class="flex items-start gap-4 text-left group" @click="goProduct('product-pet-health-kiosk')">
                               <span class="mt-1 text-brand-600">
                                 <MonitorIcon class="h-5 w-5" />
                               </span>
@@ -108,13 +108,13 @@
                         <p class="text-[13px] font-semibold tracking-[1.9px] text-brand-600 mb-8">PLATFORM</p>
                         <ul class="space-y-6">
                           <li>
-                            <button class="text-left group" @click="goProducts">
+                            <button class="text-left group" @click="goProduct('product-cro')">
                               <span class="block text-[16px] font-semibold text-ink leading-tight group-hover:text-brand-600 transition-colors">CRO for Pets</span>
                               <span class="block text-[14px] text-slate-500 mt-2 leading-snug">The integrated software core connecting all</span>
                             </button>
                           </li>
                           <li>
-                            <button class="text-left group" @click="goProducts">
+                            <button class="text-left group" @click="goProduct('product-booking')">
                               <span class="block text-[16px] font-semibold text-ink leading-tight group-hover:text-brand-600 transition-colors">Vetenerary Booking System</span>
                               <span class="block text-[14px] text-slate-500 mt-2 leading-snug">Explore specific assays and clinical use cases.</span>
                             </button>
@@ -145,9 +145,9 @@
 
             <button
               class="text-[15px] font-medium tracking-[0.2px] whitespace-nowrap transition-colors"
-              :class="navLinkClass('use-cases')"
-              @click="emit('navigate', 'use-cases')"
-            >Use Cases</button>
+              :class="navLinkClass('contact')"
+              @click="emit('navigate', 'contact')"
+            >Contact Us</button>
           </div>
 
           <!-- Right -->
@@ -196,6 +196,7 @@ import logo from '@/assets/pet/8xpet-logo.png'
 import dogImg from '@/assets/pet/dog.png'
 
 import type { PageName } from '@/App.vue'
+import type { ProductPageName } from '@/data/productCatalog'
 
 const props = defineProps<{ currentPage: PageName }>()
 
@@ -219,6 +220,7 @@ const headerBgClass = computed(() => {
 })
 
 const navTextClass = computed(() => 'text-white hover:text-white/80')
+const isProductsActive = computed(() => props.currentPage === 'products' || props.currentPage.startsWith('product-'))
 
 function navLinkClass(page: PageName) {
   return props.currentPage === page ? 'text-brand-400' : navTextClass.value
@@ -231,10 +233,10 @@ const languageTheme = computed<'light' | 'dark'>(() => {
 const hamburgerClass = computed(() => 'text-white hover:bg-white/10')
 
 const diagnosticItems = [
-  { title: 'PCR Molecular Diagnostics', desc: 'Advanced PCR testing', icon: BeakerIcon },
-  { title: 'Lateral Flow Rapid Test', desc: 'Compact and reliable', icon: TestTubeIcon },
-  { title: 'Mini Cube Analyzer', desc: 'A revolutionary', icon: BoxIcon },
-]
+  { title: 'PCR Molecular Diagnostics', desc: 'Advanced PCR testing', icon: BeakerIcon, page: 'product-pcr' },
+  { title: 'Lateral Flow Rapid Test', desc: 'Compact and reliable', icon: TestTubeIcon, page: 'product-lateral-flow' },
+  { title: 'Mini Cube Analyzer', desc: 'A revolutionary', icon: BoxIcon, page: 'product-mini-cube' },
+] satisfies Array<{ title: string; desc: string; icon: unknown; page: ProductPageName }>
 
 void ActivityIcon
 
@@ -245,6 +247,11 @@ function toggleProducts() {
 function goProducts() {
   productsOpen.value = false
   emit('navigate', 'products')
+}
+
+function goProduct(page: ProductPageName) {
+  productsOpen.value = false
+  emit('navigate', page)
 }
 
 function handleMobileNav(page: PageName) {

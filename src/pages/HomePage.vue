@@ -29,7 +29,7 @@
           <div class="mt-8 flex flex-wrap items-center gap-3 sm:gap-4">
             <button
               class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-[14px] font-semibold text-ink hover:bg-slate-100 transition-colors shadow-[0_8px_30px_rgba(255,255,255,0.18)]"
-              @click="$emit('navigate', 'use-cases')"
+              @click="$emit('navigate', 'contact')"
             >Request Demo</button>
 
             <button
@@ -227,6 +227,7 @@
         <div class="mt-8 flex flex-wrap justify-center items-center gap-3 sm:gap-4">
           <button
             class="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-[14px] font-semibold text-ink hover:bg-slate-100 transition-colors"
+            @click="$emit('navigate', 'contact')"
           >Book a Consultation</button>
 
           <button
@@ -267,7 +268,7 @@ import dev5 from '@/assets/pet/dev5.png'
 import dev6 from '@/assets/pet/dev6.png'
 
 defineEmits<{
-  (e: 'navigate', page: 'home' | 'about' | 'products' | 'use-cases'): void
+  (e: 'navigate', page: 'home' | 'about' | 'products' | 'contact'): void
 }>()
 
 const pillars = [
