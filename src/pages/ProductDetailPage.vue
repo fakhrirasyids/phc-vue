@@ -2,8 +2,7 @@
   <div class="bg-white">
     <section class="relative min-h-[646px] overflow-hidden bg-ink-950 pt-[84px] lg:min-h-[730px]">
       <img :src="product.heroImage" :alt="product.heroTitle" class="absolute inset-0 h-full w-full object-cover object-[center_100%]" />
-      <div class="absolute inset-0 bg-gradient-to-r from-black/72 via-black/42 to-black/0"></div>
-      <div class="absolute inset-0 bg-black/10"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-black/70 to-transparent"></div>
 
       <div class="relative mx-auto flex min-h-[562px] max-w-[1280px] flex-col justify-center px-5 py-12 sm:px-6 lg:min-h-[646px] lg:px-[70px]">
         <div class="max-w-[560px]">
@@ -17,7 +16,7 @@
           >
             Contact for Demo
           </button>
-          <div v-if="product.heroStats.length" class="mt-11 grid max-w-[650px] grid-cols-1 gap-5 text-white/78 sm:grid-cols-3">
+          <div v-if="product.heroStats.length" class="mt-11 grid max-w-[650px] grid-cols-1 gap-5 text-white sm:grid-cols-3">
             <div v-for="stat in product.heroStats" :key="stat.label" class="flex items-center gap-4 text-[15px] leading-tight">
               <component :is="heroStatIcon(stat.icon)" class="h-8 w-8 shrink-0 text-white" :stroke-width="1.8" />
               <span>{{ stat.label }}</span>

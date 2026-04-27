@@ -28,7 +28,8 @@ export default {
       },
       fontFamily: {
         sans: ['Poppins', 'system-ui', 'sans-serif'],
-        display: ['Poppins', 'system-ui', 'sans-serif'],
+        display: ['Intro', 'Poppins', 'system-ui', 'sans-serif'],
+        intro: ['Intro', 'Poppins', 'system-ui', 'sans-serif'],
         serif: ['Volkhov', 'Georgia', 'serif'],
       },
       maxWidth: {
