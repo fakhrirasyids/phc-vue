@@ -10,9 +10,9 @@
           <button
             class="flex items-center flex-shrink-0"
             @click="emit('navigate', 'home')"
-            aria-label="8xPet home"
+            :aria-label="t('common.homeAria')"
           >
-            <img :src="logo" alt="8xPet" class="h-9 sm:h-10 lg:h-11 w-auto" />
+            <img :src="logo" :alt="t('common.logoAlt')" class="h-9 sm:h-10 lg:h-11 w-auto" />
           </button>
 
           <!-- Desktop nav -->
@@ -21,13 +21,13 @@
               class="text-[15px] font-medium tracking-[0.2px] whitespace-nowrap transition-colors"
               :class="navLinkClass('home')"
               @click="emit('navigate', 'home')"
-            >Home</button>
+            >{{ t('nav.home') }}</button>
 
             <button
               class="text-[15px] font-medium tracking-[0.2px] whitespace-nowrap transition-colors"
               :class="navLinkClass('about')"
               @click="emit('navigate', 'about')"
-            >About Company</button>
+            >{{ t('nav.about') }}</button>
 
             <!-- Products dropdown -->
             <div class="relative" ref="productsRef">
@@ -36,7 +36,7 @@
                 :class="isProductsActive ? 'text-brand-400' : navTextClass"
                 @click="toggleProducts"
               >
-                Products
+                {{ t('nav.products') }}
                 <svg
                   class="h-4 w-4 transition-transform duration-200"
                   :class="productsOpen ? 'rotate-180' : ''"
@@ -54,16 +54,16 @@
                   <div class="grid grid-cols-12">
                     <div class="col-span-9 p-9 grid grid-cols-4 gap-x-9 gap-y-6">
                       <div>
-                        <p class="text-[13px] font-semibold tracking-[1.9px] text-brand-600 mb-7">DIAGNOSTIC DEVICES</p>
+                        <p class="text-[13px] font-semibold tracking-[1.9px] text-brand-600 mb-7">{{ t('nav.diagnosticDevices') }}</p>
                         <ul class="space-y-7">
-                          <li v-for="item in diagnosticItems" :key="item.title">
+                          <li v-for="item in diagnosticItems" :key="item.key">
                             <button class="flex items-start gap-4 text-left group" @click="goProduct(item.page)">
                               <span class="mt-1 text-brand-600">
                                 <component :is="item.icon" class="h-5 w-5" />
                               </span>
                               <span>
-                                <span class="block text-[16px] font-semibold text-ink leading-tight group-hover:text-brand-600 transition-colors">{{ item.title }}</span>
-                                <span class="block text-[14px] text-slate-500 mt-2 leading-snug">{{ item.desc }}</span>
+                                <span class="block text-[16px] font-semibold text-ink leading-tight group-hover:text-brand-600 transition-colors">{{ t(`products.items.${item.key}.title`) }}</span>
+                                <span class="block text-[14px] text-slate-500 mt-2 leading-snug">{{ t(`products.items.${item.key}.menuDesc`) }}</span>
                               </span>
                             </button>
                           </li>
@@ -71,7 +71,7 @@
                       </div>
 
                       <div>
-                        <p class="text-[13px] font-semibold tracking-[1.9px] text-brand-600 mb-7">IMAGING & HARDWARE</p>
+                        <p class="text-[13px] font-semibold tracking-[1.9px] text-brand-600 mb-7">{{ t('nav.imagingHardware') }}</p>
                         <ul class="space-y-7">
                           <li>
                             <button class="flex items-start gap-4 text-left group" @click="goProduct('product-xray')">
@@ -79,8 +79,8 @@
                                 <ScanIcon class="h-5 w-5" />
                               </span>
                               <span>
-                                <span class="block text-[16px] font-semibold text-ink leading-tight group-hover:text-brand-600 transition-colors">X-Ray Device for Pets</span>
-                                <span class="block text-[14px] text-slate-500 mt-2 leading-snug">Next-generation digital</span>
+                                <span class="block text-[16px] font-semibold text-ink leading-tight group-hover:text-brand-600 transition-colors">{{ t('products.items.xray.title') }}</span>
+                                <span class="block text-[14px] text-slate-500 mt-2 leading-snug">{{ t('products.items.xray.menuDesc') }}</span>
                               </span>
                             </button>
                           </li>
@@ -88,7 +88,7 @@
                       </div>
 
                       <div>
-                        <p class="text-[13px] font-semibold tracking-[1.9px] text-brand-600 mb-7">SMART SYSTEMS</p>
+                        <p class="text-[13px] font-semibold tracking-[1.9px] text-brand-600 mb-7">{{ t('nav.smartSystems') }}</p>
                         <ul class="space-y-7">
                           <li>
                             <button class="flex items-start gap-4 text-left group" @click="goProduct('product-pet-health-kiosk')">
@@ -96,8 +96,8 @@
                                 <MonitorIcon class="h-5 w-5" />
                               </span>
                               <span>
-                                <span class="block text-[16px] font-semibold text-ink leading-tight group-hover:text-brand-600 transition-colors">Pet Health Kiosk</span>
-                                <span class="block text-[14px] text-slate-500 mt-2 leading-snug">An automated intake and</span>
+                                <span class="block text-[16px] font-semibold text-ink leading-tight group-hover:text-brand-600 transition-colors">{{ t('products.items.petHealthKiosk.title') }}</span>
+                                <span class="block text-[14px] text-slate-500 mt-2 leading-snug">{{ t('products.items.petHealthKiosk.menuDesc') }}</span>
                               </span>
                             </button>
                           </li>
@@ -105,18 +105,18 @@
                       </div>
 
                       <div class="bg-slate-50 -m-9 ml-0 p-9">
-                        <p class="text-[13px] font-semibold tracking-[1.9px] text-brand-600 mb-8">PLATFORM</p>
+                        <p class="text-[13px] font-semibold tracking-[1.9px] text-brand-600 mb-8">{{ t('nav.platform') }}</p>
                         <ul class="space-y-6">
                           <li>
                             <button class="text-left group" @click="goProduct('product-cro')">
-                              <span class="block text-[16px] font-semibold text-ink leading-tight group-hover:text-brand-600 transition-colors">CRO for Pets</span>
-                              <span class="block text-[14px] text-slate-500 mt-2 leading-snug">The integrated software core connecting all</span>
+                              <span class="block text-[16px] font-semibold text-ink leading-tight group-hover:text-brand-600 transition-colors">{{ t('products.items.cro.title') }}</span>
+                              <span class="block text-[14px] text-slate-500 mt-2 leading-snug">{{ t('products.items.cro.menuDesc') }}</span>
                             </button>
                           </li>
                           <li>
                             <button class="text-left group" @click="goProduct('product-booking')">
-                              <span class="block text-[16px] font-semibold text-ink leading-tight group-hover:text-brand-600 transition-colors">Vetenerary Booking System</span>
-                              <span class="block text-[14px] text-slate-500 mt-2 leading-snug">Explore specific assays and clinical use cases.</span>
+                              <span class="block text-[16px] font-semibold text-ink leading-tight group-hover:text-brand-600 transition-colors">{{ t('products.items.booking.title') }}</span>
+                              <span class="block text-[14px] text-slate-500 mt-2 leading-snug">{{ t('products.items.booking.menuDesc') }}</span>
                             </button>
                           </li>
                         </ul>
@@ -125,7 +125,7 @@
                           class="mt-10 inline-flex items-center gap-3 text-[16px] font-semibold text-brand-600 hover:text-brand-700"
                           @click="goProducts"
                         >
-                          View all products
+                          {{ t('common.viewAllProducts') }}
                           <ArrowRightIcon class="h-5 w-5" />
                         </button>
                       </div>
@@ -134,7 +134,7 @@
                     <div class="col-span-3 relative bg-white p-9">
                       <img
                         :src="dogImg"
-                        alt="Veterinary care"
+                        :alt="t('home.why.imageAlt')"
                         class="h-full w-full rounded-[24px] object-cover"
                       />
                     </div>
@@ -147,7 +147,7 @@
               class="text-[15px] font-medium tracking-[0.2px] whitespace-nowrap transition-colors"
               :class="navLinkClass('contact')"
               @click="emit('navigate', 'contact')"
-            >Contact Us</button>
+            >{{ t('nav.contact') }}</button>
           </div>
 
           <!-- Right -->
@@ -159,7 +159,7 @@
             <button
               class="lg:hidden p-2 rounded-md transition-colors"
               :class="hamburgerClass"
-              aria-label="Open navigation"
+              :aria-label="t('nav.openNav')"
               @click="drawerOpen = true"
             >
               <MenuIcon :size="24" />
@@ -180,6 +180,7 @@
 
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 import {
   Menu as MenuIcon,
   Activity as ActivityIcon,
@@ -196,13 +197,15 @@ import logo from '@/assets/pet/8xpet-logo.png'
 import dogImg from '@/assets/pet/dog.png'
 
 import type { PageName } from '@/App.vue'
-import type { ProductPageName } from '@/data/productCatalog'
+import type { ProductKey, ProductPageName } from '@/data/productCatalog'
 
 const props = defineProps<{ currentPage: PageName }>()
 
 const emit = defineEmits<{
   (e: 'navigate', page: PageName): void
 }>()
+
+const { t } = useI18n({ useScope: 'global' })
 
 const scrolled = ref(false)
 const drawerOpen = ref(false)
@@ -233,10 +236,10 @@ const languageTheme = computed<'light' | 'dark'>(() => {
 const hamburgerClass = computed(() => 'text-white hover:bg-white/10')
 
 const diagnosticItems = [
-  { title: 'PCR Molecular Diagnostics', desc: 'Advanced PCR testing', icon: BeakerIcon, page: 'product-pcr' },
-  { title: 'Lateral Flow Rapid Test', desc: 'Compact and reliable', icon: TestTubeIcon, page: 'product-lateral-flow' },
-  { title: 'Mini Cube Analyzer', desc: 'A revolutionary', icon: BoxIcon, page: 'product-mini-cube' },
-] satisfies Array<{ title: string; desc: string; icon: unknown; page: ProductPageName }>
+  { key: 'pcr', icon: BeakerIcon, page: 'product-pcr' },
+  { key: 'lateralFlow', icon: TestTubeIcon, page: 'product-lateral-flow' },
+  { key: 'miniCube', icon: BoxIcon, page: 'product-mini-cube' },
+] satisfies Array<{ key: ProductKey; icon: unknown; page: ProductPageName }>
 
 void ActivityIcon
 

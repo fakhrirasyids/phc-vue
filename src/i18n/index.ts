@@ -5,10 +5,11 @@ import zh from './messages/zh.json'
 
 export type SupportedLocale = 'en' | 'id' | 'zh'
 
-const STORAGE_KEY = 'gttnano_locale'
+const STORAGE_KEY = '8xpet_locale'
+const LEGACY_STORAGE_KEY = 'gttnano_locale'
 
 export function getInitialLocale(): SupportedLocale {
-  const stored = localStorage.getItem(STORAGE_KEY) as SupportedLocale | null
+  const stored = (localStorage.getItem(STORAGE_KEY) || localStorage.getItem(LEGACY_STORAGE_KEY)) as SupportedLocale | null
   if (stored === 'en' || stored === 'id' || stored === 'zh') return stored
 
   const nav = (navigator.language || 'en').toLowerCase()
@@ -29,10 +30,13 @@ const messages = {
   zh,
 } as const
 
+const initialLocale = getInitialLocale()
+document.documentElement.lang = initialLocale
+
 export const i18n = createI18n({
   legacy: false,
   globalInjection: true,
-  locale: getInitialLocale(),
+  locale: initialLocale,
   fallbackLocale: 'en',
   messages,
 })

@@ -16,9 +16,9 @@
         >
           <div class="px-5 py-5 flex items-center justify-between border-b border-white/10">
             <button @click="navigate('home')">
-              <img :src="logo" alt="8xPet" class="h-10 w-auto" />
+              <img :src="logo" :alt="t('common.logoAlt')" class="h-10 w-auto" />
             </button>
-            <button class="p-2 text-white" @click="close" aria-label="Close navigation">
+            <button class="p-2 text-white" @click="close" :aria-label="t('nav.closeNav')">
               <XIcon :size="22" />
             </button>
           </div>
@@ -28,13 +28,13 @@
               class="text-left py-3 text-[15px] font-medium transition-colors"
               :class="currentPage === 'home' ? 'text-brand-400' : 'text-white/90 hover:text-white'"
               @click="navigate('home')"
-            >Home</button>
+            >{{ t('nav.home') }}</button>
 
             <button
               class="text-left py-3 text-[15px] font-medium transition-colors"
               :class="currentPage === 'about' ? 'text-brand-400' : 'text-white/90 hover:text-white'"
               @click="navigate('about')"
-            >About Company</button>
+            >{{ t('nav.about') }}</button>
 
             <div>
               <button
@@ -42,7 +42,7 @@
                 :class="currentPage === 'products' ? 'text-brand-400' : 'text-white/90 hover:text-white'"
                 @click="productsOpen = !productsOpen"
               >
-                Products
+                {{ t('nav.products') }}
                 <svg
                   class="h-4 w-4 transition-transform duration-200"
                   :class="productsOpen ? 'rotate-180' : ''"
@@ -54,10 +54,10 @@
               <div v-if="productsOpen" class="ml-3 mb-2 flex flex-col gap-1 border-l border-white/10 pl-3">
                 <button
                   v-for="p in productItems"
-                  :key="p.label"
+                  :key="p.key"
                   class="text-left py-2 text-[14px] text-white/75 hover:text-white transition-colors"
                   @click="navigate(p.page)"
-                >{{ p.label }}</button>
+                >{{ t(`products.items.${p.key}.title`) }}</button>
               </div>
             </div>
 
@@ -65,7 +65,7 @@
               class="text-left py-3 text-[15px] font-medium transition-colors"
               :class="currentPage === 'contact' ? 'text-brand-400' : 'text-white/90 hover:text-white'"
               @click="navigate('contact')"
-            >Contact Us</button>
+            >{{ t('nav.contact') }}</button>
 
             <div class="mt-4 border-t border-white/10 pt-4">
               <LanguageDropdown align="left" theme="light" class="w-full" />
@@ -79,6 +79,7 @@
 
 <script setup lang="ts">
 import { ref, watch, nextTick, onMounted, onBeforeUnmount } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { X as XIcon } from 'lucide-vue-next'
 import LanguageDropdown from '@/components/LanguageDropdown.vue'
 import type { PageName } from '@/App.vue'
@@ -94,6 +95,8 @@ const emit = defineEmits<{
   (e: 'update:modelValue', v: boolean): void
   (e: 'navigate', page: PageName): void
 }>()
+
+const { t } = useI18n({ useScope: 'global' })
 
 const isActive = ref(false)
 const productsOpen = ref(false)

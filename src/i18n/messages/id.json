@@ -5,269 +5,486 @@
     "zh": "中文"
   },
   "languageSwitcher": {
-    "shortEn": "EN",
-    "shortId": "ID",
+    "shortEn": "English",
+    "shortId": "Indonesia",
     "shortZh": "中文"
   },
   "common": {
-    "logoAlt": "GTTNano",
-    "demoCta": "Minta Demo Langsung",
-    "exploreCta": "Jelajahi Platform",
-    "contactSales": "Hubungi Sales"
+    "logoAlt": "8xPet",
+    "homeAria": "Beranda 8xPet",
+    "requestDemo": "Minta Demo",
+    "contactDemo": "Hubungi untuk Demo",
+    "exploreProducts": "Jelajahi Produk",
+    "learnMore": "Pelajari Lebih Lanjut",
+    "viewAllProducts": "Lihat semua produk",
+    "contactSales": "Hubungi Sales",
+    "talkToSales": "Bicara dengan Sales"
   },
   "nav": {
-    "about": "Tentang",
-    "technology": "Teknologi",
-    "pipeline": "Pipeline Produk",
-    "contact": "Kontak",
+    "home": "Beranda",
+    "about": "Tentang Perusahaan",
+    "products": "Produk",
+    "contact": "Hubungi Kami",
     "openNav": "Buka navigasi",
-    "closeMenu": "Tutup navigasi"
+    "closeNav": "Tutup navigasi",
+    "diagnosticDevices": "Perangkat Diagnostik",
+    "imagingHardware": "Pencitraan & Perangkat Keras",
+    "smartSystems": "Sistem Pintar",
+    "platform": "Platform"
   },
-  "hero": {
-    "kicker": "Platform onkologi nano-presisi berbasis AI",
-    "title": "Masa Depan Deteksi Kanker Dini",
-    "subtitle": "Platform nano-presisi berbasis AI pertama di dunia yang dirancang untuk merevolusi cara kita mendeteksi dan mengobati kanker.",
-    "primaryCta": "Minta Demo Langsung",
-    "secondaryCta": "Jelajahi Platform",
-    "cardTitle": "Inovasi berorientasi masa depan",
-    "cardBody": "Platform modular yang mencakup skrining dini, navigasi bedah, dan pengiriman terapeutik generasi berikutnya.",
-    "imageAlt": "Visualisasi penargetan presisi GTTNano"
-  },
-  "problem": {
-    "kicker": "Masalah",
-    "title": "Kurangnya Presisi Menyebabkan Deteksi Terlambat, Perawatan Toksik, Dan Tebak-Tebakan Bedah.",
-    "subtitle": "Dari diagnosis yang terlewat hingga operasi yang tidak tuntas—perawatan kanker membutuhkan alat yang lebih tajam.",
-    "cards": {
-      "gap": {
-        "title": "Kesenjangan Presisi",
-        "desc": "Mengatasi defisit presisi onkologi di seluruh diagnosis, operasi, dan terapi dapat menyelamatkan jutaan nyawa - dan ini adalah koreksi pasar senilai US$400 miliar yang menunggu untuk terjadi"
+  "home": {
+    "hero": {
+      "titleLine1": "Platform Teknologi",
+      "titleLine2": "Veteriner Terintegrasi",
+      "subtitle": "Perangkat medis canggih dan solusi digital yang dirancang untuk meningkatkan perawatan veteriner-dari diagnostik dan pencitraan hingga kios kesehatan dan platform terintegrasi."
+    },
+    "pillars": {
+      "kicker": "Pilar Utama",
+      "title": "Ekosistem Terintegrasi",
+      "subtitle": "Rangkaian solusi kami menghubungkan perangkat keras dan perangkat lunak, membantu klinik Anda dari proses masuk pasien hingga diagnosis.",
+      "diagnostics": {
+        "title": "Diagnostik",
+        "desc": "Pengujian point-of-care berkualitas lab. Dari lateral flow cepat hingga diagnostik molekuler PCR kompleks, hasil akurat tersedia dalam hitungan menit, bukan hari."
       },
-      "limitations": {
-        "title": "Keterbatasan Konvensional",
-        "desc": "\"Sistem EPR dan berbasis ligan konvensional membiarkan lebih dari 95% terapi meleset dari target, dengan efisiensi rendah, akumulasi yang tidak diinginkan di organ sehat, dan toksisitas jangka panjang.\""
+      "imaging": {
+        "title": "Pencitraan",
+        "desc": "Radiografi digital yang sangat jelas. Sensor canggih dan analisis berbantuan AI memberi kejernihan tinggi untuk jaringan lunak dan ortopedi."
       },
-      "opportunity": {
-        "title": "Peluang Klinis",
-        "desc": "GTTNano menargetkan inti sel tumor untuk sinyal lebih awal, margin lebih bersih, dan intervensi bernilai lebih tinggi di sepanjang jalur perawatan."
+      "smartSystems": {
+        "title": "Sistem Pintar",
+        "desc": "Alur kerja klinis otomatis. Sederhanakan check-in pasien, pencatatan tanda vital, dan sinkronisasi data dengan kios cerdas kami."
       }
-    }
-  },
-  "showcase": {
-    "kicker": "Cara kerjanya",
-    "title": "Era Baru Nano-Presisi",
-    "subtitle": "Berbeda dengan sistem EPR atau ligand-mediated tradisional, GTTNano menggunakan Cell Membrane Permeability Targeting untuk secara selektif menembus sel tumor dan berakumulasi di inti.",
-    "cards": {
-      "detection": {
-        "title": "Deteksi dini ultra-sensitif",
-        "desc": "Kesetiaan sinyal lebih tinggi untuk mendeteksi perubahan ganas sebelum gejala menjadi jelas."
+    },
+    "portfolio": {
+      "kicker": "Portofolio Produk",
+      "title": "Perangkat Medis Canggih"
+    },
+    "workflow": {
+      "kicker": "Alur Kerja Klinis",
+      "title": "Dari Sampel ke Keputusan Klinis",
+      "subtitle": "Platform intuitif kami dirancang agar mudah masuk ke praktik yang sibuk dan mengurangi langkah manual.",
+      "stepLabel": "Langkah {number}",
+      "sample": {
+        "title": "Sampel",
+        "desc": "Ambil sampel minimal invasif langsung dari pasien."
       },
-      "navigation": {
-        "title": "Navigasi fluoresen real-time",
-        "desc": "Panduan intraoperatif yang lebih tajam untuk menentukan margin dan mengidentifikasi penyebaran metastasis."
+      "device": {
+        "title": "Perangkat",
+        "desc": "Pemrosesan otomatis dengan perangkat medis yang intuitif."
       },
-      "delivery": {
-        "title": "Pengiriman efisiensi tinggi, toksisitas rendah",
-        "desc": "Lebih banyak muatan yang mencapai jaringan ganas sambil meminimalkan paparan sistemik."
+      "result": {
+        "title": "Hasil",
+        "desc": "Terima data diagnostik akurat setara lab dalam hitungan menit."
+      },
+      "decision": {
+        "title": "Keputusan",
+        "desc": "Ambil keputusan perawatan dengan cepat dan percaya diri."
       }
-    }
-  },
-  "hardware": {
-    "kicker": "CARA KERJANYA",
-    "title": "CMPT: Paradigma Penargetan Baru",
-    "subtitle": "Mekanisme Penargetan Generasi Berikutnya",
-    "table": {
-      "headers": {
-        "feature": "Fitur",
-        "cmpt": "CMPT (Penargetan Permeabilitas Membran Sel)",
-        "epr": "EPR (Permeabilitas dan Retensi yang Ditingkatkan)",
-        "ligand": "Penargetan Berbasis Ligan"
+    },
+    "why": {
+      "kicker": "Mengapa Penting",
+      "title": "Meningkatkan Standar Perawatan Veteriner",
+      "subtitle": "Dengan menghadirkan teknologi medis tingkat enterprise langsung ke klinik veteriner, kami membantu praktisi memberi layanan kesehatan setara manusia kepada pasien hewan.",
+      "imageAlt": "Dokter hewan menggunakan perangkat diagnostik",
+      "badgeTitle": "Akurasi Setara Lab",
+      "badgeSubtitle": "Divalidasi standar emas",
+      "fasterDiagnosis": {
+        "title": "Diagnosis Lebih Cepat",
+        "desc": "Kurangi waktu tunggu dari hari menjadi menit, sehingga intervensi dapat dilakukan saat pasien masih berada di klinik."
       },
-      "rows": [
-        {
-          "feature": "Lokasi Penargetan",
-          "cmpt": "Inti sel tumor",
-          "epr": "Jaringan tumor",
-          "ligand": "Lokasi tumor spesifik"
-        },
-        {
-          "feature": "Efisiensi Penargetan",
-          "cmpt": "> 50%",
-          "epr": "< 5%",
-          "ligand": "< 5%"
-        },
-        {
-          "feature": "Mekanisme Penargetan",
-          "cmpt": "Perubahan permeabilitas membran sel tumor",
-          "epr": "Vaskular tumor bocor",
-          "ligand": "Pengikatan spesifik antara ligan dan reseptor"
-        },
-        {
-          "feature": "Distribusi In Vivo",
-          "cmpt": "Tidak ada akumulasi signifikan di jaringan normal",
-          "epr": "Tersisa di hati/ginjal selama beberapa bulan atau bahkan bertahun-tahun",
-          "ligand": "Terdistribusi di hati dan ginjal"
-        },
-        {
-          "feature": "Toksisitas",
-          "cmpt": "Tidak toksik",
-          "epr": "Toksisitas jangka panjang",
-          "ligand": "Toksisitas jangka panjang"
-        }
-      ]
-    }
-  },
-  "benefits": {
-    "kicker": "Toksisitas minimum, terbukti pada berbagai spesies",
-    "title": "Biokompatibilitas Luar Biasa",
-    "cards": {
-      "cellSafe": {
-        "title": "Aman bagi Sel",
-        "desc": "Uji in vitro tidak menunjukkan toksisitas signifikan pada sel hidup, bahkan pada konsentrasi tinggi dan waktu paparan lama."
+      "betterOutcomes": {
+        "title": "Hasil Lebih Baik",
+        "desc": "Diagnostik molekuler dan pencitraan yang sangat sensitif mendeteksi kondisi lebih awal dan meningkatkan prognosis."
       },
-      "systemic": {
-        "title": "Tidak Ada Toksisitas Sistemik",
-        "desc": "Setelah injeksi intravena, GTTN tidak menunjukkan efek berbahaya pada fungsi organ, reproduksi, atau kimia darah."
-      },
-      "hepatic": {
-        "title": "Tidak Ada Hepatotoksisitas",
-        "desc": "Fungsi hati tetap normal, mengkonfirmasi biokompatibilitas yang sangat baik pada model hewan besar."
-      },
-      "environment": {
-        "title": "Tidak Ada Toksisitas Lingkungan",
-        "desc": "Uji embrio ikan zebra tidak mengungkapkan toksisitas perkembangan maupun ekologis."
+      "simplifiedWorkflow": {
+        "title": "Alur Kerja Lebih Sederhana",
+        "desc": "Sistem otomatis membutuhkan pelatihan minimal, sehingga teknisi dapat fokus pada perawatan pasien, bukan pengujian manual."
       }
+    },
+    "cta": {
+      "title": "Transformasikan Praktik Veteriner Anda Hari Ini",
+      "subtitle": "Bergabunglah dengan klinik progresif yang memakai platform kami untuk memberi perawatan lebih baik dan meningkatkan efisiensi klinis.",
+      "primary": "Pesan Konsultasi",
+      "secondary": "Jelajahi Menu Tes"
     }
   },
-  "oneHealth": {
-    "kicker": "AI Di Intinya",
-    "title": "Nano-Biosintesis Berbasis AI Pertama di Dunia",
-    "cards": {
-      "omics": {
-        "title": "Biologi Baru, Omics Baru",
-        "desc": "TransCellOmics: database permeabilitas berbasis AI pertama dan model prediktif."
+  "products": {
+    "categories": {
+      "diagnostics": "Diagnostik",
+      "imaging": "Pencitraan",
+      "smartSystems": "Sistem Pintar",
+      "platform": "Platform"
+    },
+    "items": {
+      "pcr": {
+        "title": "Diagnostik Molekuler PCR",
+        "desc": "Kemampuan pengujian PCR canggih untuk deteksi cepat penyakit infeksi dengan akurasi tinggi.",
+        "menuDesc": "Pengujian PCR canggih"
       },
-      "generative": {
-        "title": "AI Generatif Bertemu Nanodesain",
-        "desc": "Menggabungkan kemampuan sintesis fleksibel GTTNano dengan AI untuk produk bernilai tinggi."
+      "lateralFlow": {
+        "title": "Tes Cepat Lateral Flow",
+        "desc": "Tes cepat yang ringkas dan andal untuk skrining segera kondisi veteriner umum.",
+        "menuDesc": "Ringkas dan andal"
       },
-      "dimension": {
-        "title": "Dimensi baru multi-omics",
-        "desc": "Memperkenalkan data real-time dan terselesaikan secara spasial tentang permeabilitas membran sel."
+      "miniCube": {
+        "title": "Mini Cube Analyzer",
+        "desc": "Analyzer hematologi dan biokimia revolusioner untuk klinik modern yang hemat ruang.",
+        "menuDesc": "Analyzer revolusioner"
+      },
+      "xray": {
+        "title": "Perangkat X-Ray untuk Hewan Peliharaan",
+        "desc": "Radiografi digital generasi baru yang disesuaikan untuk anatomi veteriner dengan paparan radiasi lebih rendah.",
+        "menuDesc": "Pencitraan digital generasi baru"
+      },
+      "petHealthKiosk": {
+        "title": "Kios Kesehatan Hewan",
+        "desc": "Sistem intake dan triase otomatis yang mencatat tanda vital, berat badan, dan kuesioner pemilik sebelum dokter masuk ruangan.",
+        "menuDesc": "Sistem intake otomatis"
+      },
+      "cro": {
+        "title": "CRO untuk Hewan Peliharaan",
+        "desc": "Inti perangkat lunak terintegrasi yang menghubungkan perangkat, jadwal, dan rekam pasien.",
+        "menuDesc": "Inti software terintegrasi"
+      },
+      "booking": {
+        "title": "Sistem Booking Veteriner",
+        "desc": "Alur penjadwalan untuk kunjungan, diagnostik, dan perawatan lanjutan.",
+        "menuDesc": "Jelajahi assay dan use case klinis."
+      },
+      "croBooking": {
+        "title": "Pet CRO & Booking System",
+        "desc": "Perangkat lunak terintegrasi yang menghubungkan perangkat, jadwal, dan rekam pasien ke dalam satu tampilan klinis.",
+        "menuDesc": "Rekam klinis dan booking terpadu"
       }
+    },
+    "page": {
+      "kicker": "Produk",
+      "titleLine1": "Perangkat Medis Canggih",
+      "titleLine2": "Dibangun untuk Perawatan Veteriner",
+      "subtitle": "Diagnostik, pencitraan, dan sistem pintar yang bekerja sebagai satu kesatuan - dirancang untuk meningkatkan akurasi dan efisiensi klinis.",
+      "viewDetails": "Lihat Detail",
+      "comingSoon": "Segera Hadir",
+      "ctaTitle": "Butuh bantuan memilih perangkat yang tepat?",
+      "ctaSubtitle": "Spesialis kami akan mengonfigurasi setup yang sesuai untuk klinik Anda."
     }
   },
-  "software": {
-    "kicker": "Pipeline kemungkinan",
-    "title": "Teknologi Platform",
-    "cards": {
-      "dx": {
-        "title": "GTTN-Dx\nGTTN-SCI",
-        "desc": "Untuk skrining kanker dini dan penggunaan riset. Produk telah mendapatkan persetujuan registrasi cFDA dan kini tersedia secara komersial.",
-        "plain": "Untuk skrining kanker dini dan penggunaan riset. Produk telah mendapatkan persetujuan registrasi cFDA dan kini ",
-        "bold": "tersedia secara komersial."
-      },
-      "navi": {
-        "title": "GTTN-Navi",
-        "desc": "Telah diklasifikasikan sebagai perangkat medis Kelas III dan sedang menjalani tinjauan Breakthrough Device, dengan persetujuan yang diharapkan pada 2026–2027.",
-        "plain": "Telah diklasifikasikan sebagai perangkat medis Kelas III dan sedang menjalani tinjauan Breakthrough Device, dengan ",
-        "bold": "persetujuan yang diharapkan pada 2026–2027."
-      },
-      "tx": {
-        "title": "GTTN-Tx",
-        "desc": "Telah mendapatkan klasifikasi sebagai kombinasi obat-perangkat dan kini dalam tinjauan perangkat inovatif, dengan proyeksi persetujuan pada 2029.",
-        "plain": "Telah mendapatkan klasifikasi sebagai kombinasi obat-perangkat dan kini dalam tinjauan perangkat inovatif, dengan proyeksi ",
-        "bold": "persetujuan pada 2029."
-      },
-      "next": {
-        "title": "Berikutnya",
-        "desc": "navigasi tumor limfatik, agen kontras CT/MRI, dan pembawa radiofarmasi, beberapa di antaranya memasuki pengajuan regulasi segera.",
-        "plain": "navigasi tumor limfatik, agen kontras CT/MRI, dan pembawa radiofarmasi, beberapa di antaranya memasuki ",
-        "bold": "pengajuan regulasi segera."
-      }
+  "about": {
+    "heroAlt": "Dokter hewan merawat seekor anjing",
+    "kicker": "Tentang Kami",
+    "title": "Meningkatkan Perawatan Veteriner Melalui Teknologi",
+    "subtitle": "Didirikan oleh tim spesialis veteriner dan engineer medtech, 8xPet berkomitmen menghadirkan alat diagnostik setara manusia bagi profesional kesehatan hewan di seluruh dunia.",
+    "missionTitle": "Misi Kami",
+    "missionBody": "Memberdayakan tim veteriner dengan alat diagnostik yang cerdas, cepat, dan mudah diakses untuk meningkatkan hasil pasien dan menyederhanakan operasional klinis.",
+    "visionTitle": "Visi Kami",
+    "visionBody": "Masa depan ketika setiap klinik veteriner, apa pun ukurannya, mampu menjalankan diagnostik kompleks dan sangat akurat di point of care.",
+    "stats": {
+      "clinics": "Klinik di Seluruh Dunia",
+      "tests": "Tes Dilakukan",
+      "accuracy": "Akurasi Diagnostik",
+      "support": "Dukungan Klinis"
     }
-  },
-  "library": {
-    "kicker": "Sorotan produk",
-    "title": "Dibangun untuk Skrining, Bedah, dan Riset",
-    "products": {
-      "dx": {
-        "eyebrow": "GTTN-Dx: skrining kanker dini",
-        "title": "Skrining Sebelum Gejala",
-        "desc": "Solusi terjangkau dan mudah digunakan untuk deteksi risiko kanker spektrum luas di berbagai jenis tumor dengan biaya dan kompleksitas minimal.",
-        "points": [
-          "Deteksi molekuler sensitivitas tinggi",
-          "Kompatibel dengan alur kerja pencitraan klinis standar",
-          "Terdaftar cFDA dan tersedia secara komersial"
-        ]
-      },
-      "navi": {
-        "eyebrow": "GTTN-Navi: memberdayakan patologis dan ahli bedah",
-        "title": "Memetakan setiap lesi. Memandu setiap gerakan.",
-        "desc": "Visualisasi real-time batas tumor memberi klinisi margin lebih bersih, pemetaan metastasis lebih jelas, dan intervensi lebih percaya diri.",
-        "points": [
-          "Visualisasi margin tumor real-time",
-          "Peta tumor personal untuk pengambilan keputusan",
-          "Perangkat Kelas III dalam tinjauan Breakthrough Device"
-        ]
-      },
-      "science": {
-        "eyebrow": "Sertifikasi",
-        "title": "Persetujuan registrasi cFDA diperoleh",
-        "desc": "Penerapan komersial kini mendukung alur kerja skrining klinis dan riset translasional, menjembatani penemuan dan praktik onkologi dunia nyata.",
-        "points": [
-          "Kepatuhan klinis telah ditetapkan",
-          "Penerapan komersial sedang berjalan",
-          "Mendukung riset translasional"
-        ]
-      }
-    }
-  },
-  "cta": {
-    "kicker": "Mengapa sekarang?",
-    "title": "Titik Infleksi Sekali Seumur Hidup",
-    "bullets": [
-      "AI bertemu nano-presisi: AI generatif dan nanomaterial yang dapat diprogram menjadikan ini saat yang tepat untuk meluncurkan platform yang dibangun secara native untuk keduanya.",
-      "Mengtenagai generasi berikutnya robotika bedah: penargetan tingkat inti dan panduan fluoresen dapat menjadi lapisan visual untuk intervensi yang lebih cerdas."
-    ],
-    "cardTitle": "Siap melihat platform secara langsung?",
-    "cardBody": "Bicaralah dengan GTTNano tentang kesiapan produk, positioning klinis, dan penerapan komersial.",
-    "button": "Minta Demo Langsung"
   },
   "contact": {
-    "title": "Hubungi GTTNano",
-    "subtitle": "Platform nano-presisi berbasis AI pertama di dunia yang dirancang untuk merevolusi cara kita mendeteksi dan mengobati kanker.",
-    "addressLabel": "Alamat",
-    "address": "3 TAI SENG AVENUE, #04-36, TAI SENG EXCHANGE, Singapura 536465",
-    "emailLabel": "Email",
-    "email": "contact{'@'}GTTNano.com",
-    "phoneLabel": "Telepon",
-    "phone": "+1 (800) 555-0199",
-    "form": {
-      "firstName": "Nama depan",
-      "lastName": "Nama belakang",
-      "email": "Email bisnis",
-      "company": "Perusahaan",
-      "message": "Apa yang ingin Anda diskusikan?",
-      "submit": "Hubungi Sales",
-      "success": "Terima kasih — pesan Anda siap dikirim ke tim GTTNano."
-    },
-    "footer": {
-      "products": "Produk",
-      "company": "Perusahaan",
-      "links": {
-        "about": "Tentang Kami",
-        "technology": "Platform Teknologi",
-        "applications": "Aplikasi",
-        "investors": "Investor",
-        "dx": "GTTN-Dx / GTTN-SCI",
-        "navi": "GTTN-Navi",
-        "tx": "GTTN-Tx",
-        "next": "Berikutnya"
+    "title": "Hubungi Kami",
+    "subtitle": "Siap menjelajahi bagaimana Platform Teknologi Veteriner Terintegrasi kami dapat mengubah praktik veteriner Anda? Mari mulai percakapan.",
+    "requestDemo": "Minta Demo",
+    "platformLine1": "Platform Teknologi",
+    "platformLine2": "Veteriner Terintegrasi",
+    "platformBody": "Platform Teknologi Veteriner Terintegrasi menghadirkan perangkat medis canggih dan solusi digital untuk meningkatkan perawatan veteriner-dari diagnostik dan pencitraan hingga kios kesehatan dan platform terintegrasi.",
+    "cards": {
+      "visit": {
+        "title": "Kunjungi Kami",
+        "line1": "3 TAI SENG AVENUE, #04-36",
+        "line2": "TAI SENG EXCHANGE",
+        "line3": "Singapura 536465"
       },
-      "rights": "© 2026 GTTNano Medical Systems. Hak cipta dilindungi.",
+      "email": {
+        "title": "Email Kami",
+        "primaryUser": "contact",
+        "salesUser": "sales",
+        "domain": "8xpet.com"
+      },
+      "phone": {
+        "title": "Hubungi Kami",
+        "line1": "+1 (800) 555-0199",
+        "line2": "+65 6123 4567"
+      }
+    },
+    "steps": {
+      "needs": {
+        "title": "Ceritakan kebutuhan Anda",
+        "copy": "Bagikan tantangan dan tujuan Anda saat ini"
+      },
+      "consultation": {
+        "title": "Jadwalkan konsultasi",
+        "copy": "Bertemu dengan tim teknis kami"
+      },
+      "solution": {
+        "title": "Dapatkan solusi khusus",
+        "copy": "Terima rekomendasi yang disesuaikan"
+      }
+    },
+    "form": {
+      "fullName": "Nama Lengkap *",
+      "email": "Alamat Email *",
+      "company": "Perusahaan",
+      "phone": "Nomor Telepon",
+      "message": "Bagaimana kami bisa membantu? *",
+      "namePlaceholder": "John Smith",
+      "emailPlaceholder": "john at company.com",
+      "companyPlaceholder": "Nama Perusahaan Anda",
+      "phonePlaceholder": "+1 (555) 000-0000",
+      "messagePlaceholder": "Ceritakan proyek dan tujuan Anda...",
+      "submit": "Kirim Pesan"
+    }
+  },
+  "detail": {
+    "shared": {
+      "healthApplication": "Aplikasi Kesehatan",
+      "softwareLabel": "Perangkat Lunak",
+      "softwareSubtitle": "Pengujian Paralel dengan Status Real-Time",
+      "marketLabel": "Aplikasi Pasar",
+      "marketTitle": "Kanal Go-To-Market.",
+      "comingDetail": "Detail Produk",
+      "comingSoon": "Segera Hadir",
+      "comingBody": "Halaman detail {title} sedang disiapkan. Tim kami sedang memoles spesifikasi, alur kerja, dan visual produk.",
+      "backToProducts": "Kembali ke Produk",
+      "softwareBenefits": {
+        "ecosystem": {
+          "title": "Ekosistem Lintas Platform",
+          "copy": "Berjalan native di iOS, Android, dan Windows. Kontrol perangkat melalui tablet rugged di lapangan atau ponsel pribadi."
+        },
+        "interpretation": {
+          "title": "Interpretasi Otomatis",
+          "copy": "Algoritma canggih menganalisis hasil secara instan dan memberikan hasil yang jelas untuk pengambilan keputusan."
+        },
+        "reporting": {
+          "title": "Pelaporan Instan",
+          "copy": "Buat laporan PDF profesional secara otomatis dan sinkronkan hasil ke rekam klinis."
+        }
+      },
+      "healthApplications": {
+        "efficiency": {
+          "title": "Fokus pada Efisiensi",
+          "copy": "Mendeteksi patogen periodontal utama dari satu swab oral dalam sekitar 40 menit."
+        },
+        "screening": {
+          "title": "Dukungan Skrining Oral",
+          "copy": "Memberi hasil deteksi patogen yang terstruktur untuk mendukung skrining dental, triase kasus, dan diskusi tindak lanjut."
+        },
+        "workflow": {
+          "title": "Alur Kerja Dental Veteriner",
+          "copy": "Cocok digunakan sebelum prosedur dental, selama pemeriksaan periodontal, dan untuk pemantauan lanjutan bila diindikasikan secara klinis."
+        }
+      },
+      "markets": {
+        "hospitals": "Rumah Sakit Hewan",
+        "dentalSpecialists": "Spesialis Dental Veteriner",
+        "diagnosticLabs": "Laboratorium Diagnostik Hewan"
+      }
+    },
+    "pcr": {
+      "heroTitle": "Molekuler Veteriner Cepat",
+      "heroSubtitle": "Diagnostik qPCR Periodontal Anjing & Kucing",
+      "introTitle": "qPCR-DX 1 untuk Klinik Veteriner",
+      "introBody": "Menu qPCR hewan pendamping yang terus berkembang, mencakup kesehatan oral, penyakit pernapasan, infeksi gastrointestinal, penyakit yang dibawa vektor, dan pengujian molekuler khusus.",
+      "heroStats": {
+        "rapidAmplification": "Amplifikasi Cepat 40 Menit",
+        "singleDoseBeads": "Bead Liofilisasi Dosis Tunggal",
+        "roomTemperature": "Penyimpanan & Transportasi Suhu Ruang"
+      },
+      "features": {
+        "beadTechnology": {
+          "title": "Teknologi Bead Liofilisasi Dosis Tunggal",
+          "copy": "Menyederhanakan alur kerja dan mendukung logistik suhu ruang."
+        },
+        "amplificationEngine": {
+          "title": "Mesin Amplifikasi Cepat",
+          "copy": "Alur qPCR cepat mempersingkat waktu menuju hasil menjadi sekitar 40 menit."
+        },
+        "integratedEcosystem": {
+          "title": "Ekosistem Instrumen dan Reagen Terintegrasi",
+          "copy": "Perangkat keras, reagen, dan alur kerja dirancang bersama untuk pengujian yang stabil dan dapat direproduksi."
+        }
+      },
+      "healthTitle": "Skrining Patogen Oral untuk Alur Dental Veteriner",
+      "technicalLabel": "Perbandingan Teknis",
+      "technicalTitle": "Dirancang untuk Alur Molekuler Veteriner.",
+      "specs": {
+        "aspect": {
+          "label": "Aspek",
+          "value": "Sistem POCT Liofilisasi"
+        },
+        "reagentLogistics": {
+          "label": "Logistik Reagen",
+          "value": "Penyimpanan dan transportasi suhu ruang"
+        },
+        "setup": {
+          "label": "Setup",
+          "value": "Bead liofilisasi dosis tunggal siap pakai"
+        },
+        "timeToResult": {
+          "label": "Waktu ke Hasil",
+          "value": "~40 menit"
+        },
+        "workflowFormat": {
+          "label": "Format Alur Kerja",
+          "value": "Alur instrumen dan assay terintegrasi"
+        }
+      },
+      "softwareTitle": "Software qPCR Veteriner yang Mudah Digunakan",
+      "finalTitle": "Mendukung 100+ Penyakit Hewan",
+      "finalBullets": {
+        "oralHealth": "Kesehatan oral dan alur kerja dental veteriner",
+        "respiratory": "Pengujian penyakit infeksi pernapasan",
+        "gastrointestinal": "Pengujian patogen gastrointestinal",
+        "vectorBorne": "Pengujian penyakit bawaan vektor dan zoonosis",
+        "specialty": "Assay molekuler khusus dan regional"
+      }
+    },
+    "lateralFlow": {
+      "heroTitle": "Mendefinisikan Ulang Skrining Kesehatan Oral Hewan",
+      "heroSubtitle": "Diagnostik qPCR Periodontal Anjing & Kucing",
+      "introTitle": "8IVD Lateral Flow (Skrining Cepat)",
+      "introBody": "Analyzer imunofluoresensi portabel kami mengatur waktu, membaca, dan mencetak hasil tes secara otomatis, mengurangi subjektivitas dari interpretasi visual.",
+      "heroStats": {
+        "fastResults": "Hasil dalam 10-15 Menit",
+        "digitalReports": "Laporan Digital Objektif",
+        "roomTemperature": "Penyimpanan Suhu Ruang"
+      },
+      "features": {
+        "objectiveReading": {
+          "title": "Pembacaan Pintar & Objektif",
+          "copy": "Analyzer otomatis mengatur waktu, membaca, dan mencetak hasil tes, mengurangi subjektivitas."
+        },
+        "stabilizedReagents": {
+          "title": "Reagen Liofilisasi Stabil",
+          "copy": "Reagen kami menggunakan formulasi liofilisasi stabil untuk penanganan suhu ruang yang praktis."
+        },
+        "rapidTurnaround": {
+          "title": "Turnaround Cepat",
+          "copy": "Dari swab oral ke laporan cetak dalam 10-15 menit."
+        }
+      },
+      "healthTitle": "Alat Utama untuk Skrining & Komunikasi",
+      "technicalLabel": "Spesifikasi Teknis",
+      "technicalTitle": "Operasi Mudah. Memberdayakan Setiap Dokter Hewan.",
+      "specs": {
+        "targetMarker": {
+          "label": "Marker Target",
+          "value": "Antigen Porphyromonas gulae (P. gulae)"
+        },
+        "applicableSpecies": {
+          "label": "Spesies Berlaku",
+          "value": "Anjing & Kucing"
+        },
+        "sampleType": {
+          "label": "Jenis Sampel",
+          "value": "Swab oral"
+        },
+        "testPrinciple": {
+          "label": "Prinsip Tes",
+          "value": "Assay lateral flow imunofluoresensi"
+        },
+        "analyzerReadout": {
+          "label": "Pembacaan Analyzer",
+          "value": "Hasil digital dibaca instrumen dengan laporan cetak"
+        },
+        "turnaroundTime": {
+          "label": "Turnaround Time (TAT)",
+          "value": "10-15 menit"
+        },
+        "storageTransport": {
+          "label": "Penyimpanan & Transportasi",
+          "value": "2C-30C"
+        },
+        "testingLocation": {
+          "label": "Lokasi Pengujian",
+          "value": "Klinik veteriner / point of care"
+        }
+      },
+      "softwareTitle": "Software Veteriner yang Mudah Digunakan",
+      "finalTitle": "Point-of-Care Hewan Pendamping yang Skalabel",
+      "finalBullets": {
+        "dental": "Kesehatan dental & oral: aplikasi skrining kesehatan oral dan perawatan preventif hewan.",
+        "infectious": "Penyakit infeksi: tes antigen dan antibodi untuk penyakit infeksi umum pada anjing dan kucing.",
+        "inflammation": "Inflamasi & kesehatan pencernaan: cCRP, fSAA, cPL, dan fPL.",
+        "markers": "Marker kesehatan jantung, endokrin, dan ginjal."
+      }
+    },
+    "xray": {
+      "heroTitle": "Diagnostik Tanpa Tunda",
+      "heroSubtitle": "Tangkap. Analisis. Cegah.",
+      "introTitle": "DX-1 Digital X-Ray",
+      "introBody": "X-ray digital portabel kami mengatur waktu, membaca, dan mencetak hasil tes secara otomatis, mengurangi subjektivitas dari interpretasi visual.",
+      "features": {
+        "nonMydriatic": {
+          "title": "Pencitraan Non-MyDriatic",
+          "copy": "Integrasi mulus dengan sistem x-ray DR / CR."
+        },
+        "autofocus": {
+          "title": "Autofocus + Auto-Exposure",
+          "copy": "Arahkan + sejajarkan + tangkap. Sistem menangani sisanya."
+        },
+        "lightweight": {
+          "title": "Desain Lapangan Ringan",
+          "copy": "Berat di bawah 2 kg, ideal untuk skrining mobile dan program outreach."
+        }
+      },
+      "healthTitle": "",
+      "technicalLabel": "Spesifikasi Teknis",
+      "technicalTitle": "Operasi Mudah. Memberdayakan Setiap Dokter Hewan.",
+      "specs": {
+        "detectorType": {
+          "label": "Tipe Detektor",
+          "value": "Flat Panel Detector (a-Si / CsI)"
+        },
+        "aiAnalysis": {
+          "label": "Analisis AI",
+          "value": "Ya"
+        },
+        "dynamicRange": {
+          "label": "Rentang Dinamis",
+          "value": "16-bit"
+        },
+        "pixelPitch": {
+          "label": "Pixel Pitch",
+          "value": "140 - 160 um"
+        },
+        "heatCapacity": {
+          "label": "Kapasitas Panas",
+          "value": "300 - 400 kHU"
+        },
+        "systemType": {
+          "label": "Tipe Sistem",
+          "value": "X-Ray Digital Mobile / Portabel"
+        },
+        "connectivity": {
+          "label": "Konektivitas",
+          "value": "Wi-Fi / Ethernet / Opsional 4G-5G"
+        }
+      },
+      "softwareTitle": "Software X-Ray Veteriner yang Mudah Digunakan",
+      "finalTitle": ""
+    }
+  },
+  "footer": {
+    "description": "Perangkat medis dan platform software canggih yang mentransformasi diagnostik veteriner dan alur kerja klinis di seluruh dunia.",
+    "products": "Produk",
+    "company": "Perusahaan",
+    "contact": "Kontak",
+    "links": {
+      "about": "Tentang Kami",
+      "technology": "Platform Teknologi",
+      "applications": "Aplikasi",
+      "investors": "Investor",
+      "careers": "Karier",
       "privacy": "Kebijakan Privasi",
       "terms": "Ketentuan Layanan",
-      "legal": "Hukum"
-    }
+      "legal": "Legal"
+    },
+    "emailUser": "contact",
+    "emailDomain": "8xpet.com",
+    "rights": "© 2026 8xPet Medical Systems. Hak cipta dilindungi."
   }
 }

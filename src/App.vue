@@ -9,8 +9,8 @@
       <ContactPage v-else-if="currentPage === 'contact'" @navigate="navigateTo" />
       <ProductDetailPage v-else-if="activeProductDetailPage" :page="activeProductDetailPage" @navigate="navigateTo" />
       <ComingSoonPage
-        v-else-if="activeProductTitle"
-        :title="activeProductTitle"
+        v-else-if="activeProductTitleKey"
+        :title-key="activeProductTitleKey"
         @navigate="navigateTo"
       />
       <ProductsPage v-else @navigate="navigateTo" />
@@ -106,9 +106,9 @@ const activeProductDetailPage = computed<ProductDetailPageName | undefined>(() =
   return page && (productDetailPages as readonly string[]).includes(page) ? (page as ProductDetailPageName) : undefined
 })
 
-const activeProductTitle = computed(() => {
+const activeProductTitleKey = computed(() => {
   const page = activeProductPage.value
-  return page && !activeProductDetailPage.value ? comingSoonProducts[page] : ''
+  return page && !activeProductDetailPage.value ? `products.items.${comingSoonProducts[page]}.title` : ''
 })
 
 onMounted(() => window.addEventListener('hashchange', onHashChange))

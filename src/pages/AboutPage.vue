@@ -5,7 +5,7 @@
       <div class="relative w-full h-[420px] sm:h-[500px] lg:h-[560px]">
         <img
           :src="aboutHero"
-          alt="Veterinarians caring for a dog"
+          :alt="t('about.heroAlt')"
           class="absolute inset-0 w-full h-full object-cover"
         />
       </div>
@@ -14,12 +14,12 @@
     <!-- About copy -->
     <section class="bg-slate-50 pt-14 sm:pt-16 lg:pt-20 pb-14 sm:pb-16 lg:pb-20">
       <div class="max-w-[1080px] mx-auto px-5 sm:px-6 lg:px-10 text-center">
-        <p class="text-[12px] font-semibold tracking-[2px] text-brand-500 uppercase">About Us</p>
+        <p class="text-[12px] font-semibold tracking-[2px] text-brand-500 uppercase">{{ t('about.kicker') }}</p>
         <h1 class="mt-3 font-bold text-ink text-[28px] sm:text-[36px] lg:text-[44px] leading-[1.15] tracking-[-0.01em]">
-          Elevating Veterinary Care Through Technology
+          {{ t('about.title') }}
         </h1>
         <p class="mt-5 text-slate-500 text-[14px] sm:text-[16px] leading-[1.7] max-w-[780px] mx-auto">
-          Founded by a team of veterinary specialists and medtech engineers, VetTech is dedicated to bringing human-grade diagnostic tools to animal health professionals worldwide.
+          {{ t('about.subtitle') }}
         </p>
       </div>
     </section>
@@ -31,9 +31,9 @@
           <div class="w-10 h-10 flex items-center justify-center">
             <TargetIcon class="h-8 w-8 text-brand-600" />
           </div>
-          <h3 class="mt-12 font-bold text-ink text-[20px] sm:text-[22px]">Our Mission</h3>
+          <h3 class="mt-12 font-bold text-ink text-[20px] sm:text-[22px]">{{ t('about.missionTitle') }}</h3>
           <p class="mt-3 text-slate-500 text-[14px] sm:text-[15px] leading-[1.7]">
-            To empower veterinary teams with intelligent, rapid, and accessible diagnostic tools that improve patient outcomes and streamline clinical operations.
+            {{ t('about.missionBody') }}
           </p>
         </div>
 
@@ -41,9 +41,9 @@
           <div class="w-10 h-10 flex items-center justify-center">
             <ShieldIcon class="h-8 w-8 text-brand-600" />
           </div>
-          <h3 class="mt-12 font-bold text-ink text-[20px] sm:text-[22px]">Our Vision</h3>
+          <h3 class="mt-12 font-bold text-ink text-[20px] sm:text-[22px]">{{ t('about.visionTitle') }}</h3>
           <p class="mt-3 text-slate-500 text-[14px] sm:text-[15px] leading-[1.7]">
-            A future where every veterinary clinic, regardless of size, has the capability to perform highly accurate, complex diagnostics at the point of care.
+            {{ t('about.visionBody') }}
           </p>
         </div>
       </div>
@@ -55,7 +55,7 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6 text-center">
           <div v-for="s in stats" :key="s.label">
             <p class="font-bold text-brand-400 text-[34px] sm:text-[42px] lg:text-[52px] leading-none tracking-[-0.02em]">{{ s.value }}</p>
-            <p class="mt-2 text-white/70 text-[13px] sm:text-[14px]">{{ s.label }}</p>
+            <p class="mt-2 text-white/70 text-[13px] sm:text-[14px]">{{ t(s.labelKey) }}</p>
           </div>
         </div>
       </div>
@@ -64,6 +64,7 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import { Target as TargetIcon, Shield as ShieldIcon } from 'lucide-vue-next'
 import aboutHero from '@/assets/pet/bgheader.png'
 
@@ -71,10 +72,12 @@ defineEmits<{
   (e: 'navigate', page: 'home' | 'about' | 'products' | 'contact'): void
 }>()
 
+const { t } = useI18n({ useScope: 'global' })
+
 const stats = [
-  { value: '500+',   label: 'Clinics Worldwide' },
-  { value: '2M+',    label: 'Tests Performed' },
-  { value: '99.8%',  label: 'Diagnostic Accuracy' },
-  { value: '24/7',   label: 'Clinical Support' },
+  { value: '500+', labelKey: 'about.stats.clinics' },
+  { value: '2M+', labelKey: 'about.stats.tests' },
+  { value: '99.8%', labelKey: 'about.stats.accuracy' },
+  { value: '24/7', labelKey: 'about.stats.support' },
 ]
 </script>

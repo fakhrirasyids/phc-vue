@@ -10,264 +10,481 @@
     "shortZh": "中文"
   },
   "common": {
-    "logoAlt": "GTTNano",
-    "demoCta": "Request a Live Demo",
-    "exploreCta": "Explore the Platform",
-    "contactSales": "Contact Sales"
+    "logoAlt": "8xPet",
+    "homeAria": "8xPet home",
+    "requestDemo": "Request Demo",
+    "contactDemo": "Contact for Demo",
+    "exploreProducts": "Explore Products",
+    "learnMore": "Learn More",
+    "viewAllProducts": "View all products",
+    "contactSales": "Contact Sales",
+    "talkToSales": "Talk to Sales"
   },
   "nav": {
-    "about": "About",
-    "technology": "Technology",
-    "pipeline": "Pipeline",
-    "contact": "Contact",
+    "home": "Home",
+    "about": "About Company",
+    "products": "Products",
+    "contact": "Contact Us",
     "openNav": "Open navigation",
-    "closeMenu": "Close navigation"
+    "closeNav": "Close navigation",
+    "diagnosticDevices": "Diagnostic Devices",
+    "imagingHardware": "Imaging & Hardware",
+    "smartSystems": "Smart Systems",
+    "platform": "Platform"
   },
-  "hero": {
-    "kicker": "AI-native nano-precision oncology platform",
-    "title": "The Future of Early Cancer Detection",
-    "subtitle": "World’s first AI-native, nano-precision platform designed to revolutionize how we detect and treat cancer.",
-    "primaryCta": "Request a Live Demo",
-    "secondaryCta": "Explore the Platform",
-    "cardTitle": "Future-forward innovation",
-    "cardBody": "A modular platform spanning early screening, surgical navigation, and next-generation therapeutic delivery.",
-    "imageAlt": "GTTNano precision targeting visualization"
-  },
-  "problem": {
-    "kicker": "The Problem",
-    "title": "Lack Of Precision Leads To Late Detection, Toxic Treatments, And Surgical Guesswork.",
-    "subtitle": "From missed diagnoses to incomplete surgeries—cancer care demands sharper tools.",
-    "cards": {
-      "gap": {
-        "title": "Precision Gap",
-        "desc": "Bridging oncology’s precision deficit across diagnosis, surgery, and therapy could save millions of lives - and it’s a US$400 billion market correction waiting to happen"
+  "home": {
+    "hero": {
+      "titleLine1": "Integrated Veterinary",
+      "titleLine2": "Technology Platform",
+      "subtitle": "Advanced medical devices and digital solutions designed to enhance veterinary care-from diagnostics and imaging to health kiosks and integrated platforms."
+    },
+    "pillars": {
+      "kicker": "Core Pillars",
+      "title": "An Integrated Ecosystem",
+      "subtitle": "Our comprehensive suite seamlessly connects hardware and software, empowering your clinic from intake to diagnosis.",
+      "diagnostics": {
+        "title": "Diagnostics",
+        "desc": "Lab-quality point-of-care testing. From rapid lateral flow to complex PCR molecular diagnostics, deliver accurate results in minutes instead of days."
       },
-      "limitations": {
-        "title": "Conventional Limitations",
-        "desc": "\"Conventional EPR and ligand-based systems leave over 95% of therapy off target, suffering from poor efficiency, unintended accumulation in healthy organs, and long-term toxicity.\""
+      "imaging": {
+        "title": "Imaging",
+        "desc": "Crystal clear digital radiography. Advanced sensors and AI-assisted analysis provide unprecedented clarity for soft tissue and orthopedics."
       },
-      "opportunity": {
-        "title": "Clinical Opportunity",
-        "desc": "GTTNano targets the tumor cell nucleus for earlier signal, cleaner margins, and higher-value interventions across the care pathway."
+      "smartSystems": {
+        "title": "Smart Systems",
+        "desc": "Automated clinical workflows. Streamline patient check-in, vitals capture, and data synchronization seamlessly with our intelligent kiosks."
       }
-    }
-  },
-  "showcase": {
-    "kicker": "How it works",
-    "title": "A New Era of Nano-Precision",
-    "subtitle": "Unlike traditional EPR or ligand-based systems, GTTN leverages a novel Cell Membrane Permeability Targeting (CMPT) mechanism—allowing it to penetrate tumor cells selectively and accumulate in the nucleus with unmatched precision.",
-    "cards": {
-      "detection": {
-        "title": "Ultra-sensitive early detection",
-        "desc": "Higher signal fidelity for detecting malignant changes before symptoms become obvious."
+    },
+    "portfolio": {
+      "kicker": "Product Portfolio",
+      "title": "Advanced Medical Devices"
+    },
+    "workflow": {
+      "kicker": "Clinical Workflow",
+      "title": "From Sample to Clinical Decision",
+      "subtitle": "Our intuitive platforms are designed to seamlessly integrate into your busy practice, eliminating manual steps.",
+      "stepLabel": "Step {number}",
+      "sample": {
+        "title": "Sample",
+        "desc": "Collect minimally invasive samples directly from the patient."
       },
-      "navigation": {
-        "title": "Real-time fluorescence navigation",
-        "desc": "Sharper intraoperative guidance for defining margins and identifying metastatic spread."
+      "device": {
+        "title": "Device",
+        "desc": "Automated processing with our intuitive medical hardware."
       },
-      "delivery": {
-        "title": "High-efficiency, low-toxicity delivery",
-        "desc": "More of the payload reaches malignant tissue while minimizing systemic exposure."
+      "result": {
+        "title": "Result",
+        "desc": "Receive lab-grade accurate diagnostic data in minutes."
+      },
+      "decision": {
+        "title": "Decision",
+        "desc": "Make confident, immediate treatment decisions."
       }
-    }
-  },
-  "hardware": {
-    "kicker": "HOW IT WORKS",
-    "title": "CMPT: A New Targeting Paradigm",
-    "subtitle": "The Next-Gen Targeting Mechanism",
-    "table": {
-      "headers": {
-        "feature": "Feature",
-        "cmpt": "CMPT (Cell Membrane Permeability Targeting)",
-        "epr": "EPR (Enhanced Permeability and Retention)",
-        "ligand": "Ligand-Mediated Targeting"
+    },
+    "why": {
+      "kicker": "Why It Matters",
+      "title": "Elevating the Standard of Veterinary Care",
+      "subtitle": "By bringing enterprise-level medical technology directly to the veterinary clinic, we enable practitioners to deliver human-grade healthcare to their animal patients.",
+      "imageAlt": "Veterinarian using diagnostic equipment",
+      "badgeTitle": "Lab-Grade Accuracy",
+      "badgeSubtitle": "Gold standard validated",
+      "fasterDiagnosis": {
+        "title": "Faster Diagnosis",
+        "desc": "Reduce turnaround times from days to minutes, allowing for immediate intervention while the patient is still in the clinic."
       },
-      "rows": [
-        {
-          "feature": "Targeting Site",
-          "cmpt": "Tumor cell nucleus",
-          "epr": "Tumor tissue",
-          "ligand": "Specific tumor sites"
-        },
-        {
-          "feature": "Targeting Efficiency",
-          "cmpt": "> 50%",
-          "epr": "< 5%",
-          "ligand": "< 5%"
-        },
-        {
-          "feature": "Targeting Mechanism",
-          "cmpt": "Tumor cell membrane permeability alteration",
-          "epr": "Leaky tumor vasculature",
-          "ligand": "Specific binding between ligand and receptor"
-        },
-        {
-          "feature": "In Vivo Distribution",
-          "cmpt": "No significant accumulation in normal tissues",
-          "epr": "Remains in liver/kidney for several months or even years",
-          "ligand": "Distributed in liver and kidney"
-        },
-        {
-          "feature": "Toxicity",
-          "cmpt": "Non-toxic",
-          "epr": "Long-term toxicity",
-          "ligand": "Long-term toxicity"
-        }
-      ]
-    }
-  },
-  "benefits": {
-    "kicker": "Minimum-Toxicity, Proven Across Species",
-    "title": "Exceptional Biocompatibility",
-    "cards": {
-      "cellSafe": {
-        "title": "Cell Safe",
-        "desc": "In vitro tests show no significant toxicity to living cells, even at high concentrations and long exposure times."
+      "betterOutcomes": {
+        "title": "Better Outcomes",
+        "desc": "Highly sensitive molecular diagnostics and imaging catch underlying conditions earlier, dramatically improving prognosis."
       },
-      "systemic": {
-        "title": "No Systemic Toxicity",
-        "desc": "After intravenous injection, GTTN showed no harmful effects on organ function, reproduction, or blood chemistry."
-      },
-      "hepatic": {
-        "title": "No Hepatotoxicity",
-        "desc": "Liver function remains normal, confirming excellent biocompatibility in large animal models."
-      },
-      "environment": {
-        "title": "No Environmental Toxicity",
-        "desc": "Zebrafish embryo tests revealed no developmental or ecological toxicity."
+      "simplifiedWorkflow": {
+        "title": "Simplified Workflow",
+        "desc": "Automated systems require minimal training, freeing up your technicians to focus on patient care rather than manual testing."
       }
+    },
+    "cta": {
+      "title": "Transform Your Veterinary Practice Today",
+      "subtitle": "Join hundreds of forward-thinking clinics leveraging our platform to deliver superior care and drive clinical efficiency.",
+      "primary": "Book a Consultation",
+      "secondary": "Explore Test Menu"
     }
   },
-  "oneHealth": {
-    "kicker": "AI At Its Core",
-    "title": "World’s 1st AI-Native Nano-Biosynthesis",
-    "cards": {
-      "omics": {
-        "title": "New Biology, New Omics",
-        "desc": "TransCellOmics: 1st AI-driven permeability database and predictive model."
+  "products": {
+    "categories": {
+      "diagnostics": "Diagnostics",
+      "imaging": "Imaging",
+      "smartSystems": "Smart Systems",
+      "platform": "Platform"
+    },
+    "items": {
+      "pcr": {
+        "title": "PCR Molecular Diagnostics",
+        "desc": "Advanced PCR testing capabilities offering rapid detection of infectious diseases with unprecedented accuracy.",
+        "menuDesc": "Advanced PCR testing"
       },
-      "generative": {
-        "title": "Generative AI Meets Nanodesign",
-        "desc": "Combining GTTNano’s flexible synthesis capabilities with AI for high value products."
+      "lateralFlow": {
+        "title": "Lateral Flow Rapid Test",
+        "desc": "Compact and reliable rapid tests for immediate screening of common veterinary conditions.",
+        "menuDesc": "Compact and reliable"
       },
-      "dimension": {
-        "title": "A new dimension of multi-omics",
-        "desc": "Introducing real-time, spatially resolved data on cell membrane permeability."
+      "miniCube": {
+        "title": "Mini Cube Analyzer",
+        "desc": "A revolutionary hematology and biochemistry analyzer designed for the modern, space-conscious clinic.",
+        "menuDesc": "A revolutionary analyzer"
+      },
+      "xray": {
+        "title": "X-Ray Device for Pets",
+        "desc": "Next-generation digital radiography tailored specifically for veterinary anatomy with lower radiation exposure.",
+        "menuDesc": "Next-generation digital imaging"
+      },
+      "petHealthKiosk": {
+        "title": "Pet Health Kiosk",
+        "desc": "An automated intake and triage system that records vital signs, weight, and owner questionnaires before the doctor enters the room.",
+        "menuDesc": "An automated intake system"
+      },
+      "cro": {
+        "title": "CRO for Pets",
+        "desc": "The integrated software core connecting every device, schedule, and patient record.",
+        "menuDesc": "The integrated software core connecting all"
+      },
+      "booking": {
+        "title": "Veterinary Booking System",
+        "desc": "Scheduling workflows for visits, diagnostics, and follow-up care.",
+        "menuDesc": "Explore assays and clinical use cases."
+      },
+      "croBooking": {
+        "title": "Pet CRO & Booking System",
+        "desc": "Integrated software that connects every device, schedule, and patient record into a single clinical view.",
+        "menuDesc": "Clinical records and booking together"
       }
+    },
+    "page": {
+      "kicker": "Products",
+      "titleLine1": "Advanced Medical Devices",
+      "titleLine2": "Built for Veterinary Care",
+      "subtitle": "Diagnostics, imaging, and smart systems that work as one - engineered to elevate clinical accuracy and efficiency.",
+      "viewDetails": "View Details",
+      "comingSoon": "Coming Soon",
+      "ctaTitle": "Need help choosing the right device?",
+      "ctaSubtitle": "Our specialists will configure a setup tailored to your clinic."
     }
   },
-  "software": {
-    "kicker": "Pipeline of possibilities",
-    "title": "Platform Technology",
-    "cards": {
-      "dx": {
-        "title": "GTTN-Dx\nGTTN-SCI",
-        "desc": "For Cancer Early Screening and Research Use. Products have already received cFDA registration approval and are now commercially available.",
-        "plain": "For Cancer Early Screening and Research Use. Products have already received cFDA registration approval and are now ",
-        "bold": "commercially available."
-      },
-      "navi": {
-        "title": "GTTN-Navi",
-        "desc": "It has been classified as a Class III medical device and is undergoing Breakthrough Device review, with expected approval by 2026–2027.",
-        "plain": "It has been classified as a Class III medical device and is undergoing Breakthrough Device review, with ",
-        "bold": "expected approval by 2026–2027."
-      },
-      "tx": {
-        "title": "GTTN-Tx",
-        "desc": "It has obtained classification as a drug-device combination and is now under innovative device review, with projected approval by 2029.",
-        "plain": "It has obtained classification as a drug-device combination and is now under innovative device review, with projected ",
-        "bold": "approval by 2029."
-      },
-      "next": {
-        "title": "Next in Line",
-        "desc": "lymphatic tumor navigation, CT/MRI contrast agents, and radiopharmaceutical carriers, several entering regulatory submission soon.",
-        "plain": "lymphatic tumor navigation, CT/MRI contrast agents, and radiopharmaceutical carriers, several entering ",
-        "bold": "regulatory submission soon."
-      }
+  "about": {
+    "heroAlt": "Veterinarians caring for a dog",
+    "kicker": "About Us",
+    "title": "Elevating Veterinary Care Through Technology",
+    "subtitle": "Founded by a team of veterinary specialists and medtech engineers, 8xPet is dedicated to bringing human-grade diagnostic tools to animal health professionals worldwide.",
+    "missionTitle": "Our Mission",
+    "missionBody": "To empower veterinary teams with intelligent, rapid, and accessible diagnostic tools that improve patient outcomes and streamline clinical operations.",
+    "visionTitle": "Our Vision",
+    "visionBody": "A future where every veterinary clinic, regardless of size, has the capability to perform highly accurate, complex diagnostics at the point of care.",
+    "stats": {
+      "clinics": "Clinics Worldwide",
+      "tests": "Tests Performed",
+      "accuracy": "Diagnostic Accuracy",
+      "support": "Clinical Support"
     }
-  },
-  "library": {
-    "kicker": "Product spotlight",
-    "title": "Built for Screening, Surgery, and Research",
-    "products": {
-      "dx": {
-        "eyebrow": "GTTN-Dx: early cancer screening",
-        "title": "Screen before Symptoms",
-        "desc": "An affordable, easy-to-use solution for broad-spectrum cancer risk detection across multiple tumor types with minimal cost and complexity.",
-        "points": [
-          "High-sensitivity molecular detection",
-          "Compatible with standard clinical imaging workflows",
-          "cFDA registered and commercially available"
-        ]
-      },
-      "navi": {
-        "eyebrow": "GTTN-Navi: empowering pathologists and surgeons",
-        "title": "Maps every lesion. Guides every move.",
-        "desc": "Real-time visualization of tumor boundaries gives clinicians cleaner margins, clearer metastasis mapping, and more confident interventions.",
-        "points": [
-          "Real-time tumor margin visualization",
-          "Personalized tumor maps for decision-making",
-          "Class III device under Breakthrough Device review"
-        ]
-      },
-      "science": {
-        "eyebrow": "Certification",
-        "title": "cFDA registration approval secured",
-        "desc": "Commercial deployment now supports both clinical screening workflows and translational research, bridging discovery and real-world oncology practice.",
-        "points": [
-          "Clinical compliance established",
-          "Commercial deployment underway",
-          "Supports translational research"
-        ]
-      }
-    }
-  },
-  "cta": {
-    "kicker": "Why now?",
-    "title": "A Once-in-a-Generation Inflection Point",
-    "bullets": [
-      "AI meets nano-precision: generative AI and programmable nanomaterials make this the right moment to launch a platform built natively for both.",
-      "Powering the next generation of surgical robotics: nucleus-level targeting and fluorescence guidance can become the visual layer for smarter interventions."
-    ],
-    "cardTitle": "Ready to see the platform live?",
-    "cardBody": "Talk with GTTNano about product readiness, clinical positioning, and commercial deployment.",
-    "button": "Request a Live Demo"
   },
   "contact": {
-    "title": "Contact GTTNano",
-    "subtitle": "World’s first AI-native, nano-precision platform designed to revolutionize how we detect and treat cancer.",
-    "addressLabel": "Address",
-    "address": "3 TAI SENG AVENUE, #04-36, TAI SENG EXCHANGE, Singapore 536465",
-    "emailLabel": "Email",
-    "email": "contact{'@'}GTTNano.com",
-    "phoneLabel": "Phone",
-    "phone": "+1 (800) 555-0199",
-    "form": {
-      "firstName": "First name",
-      "lastName": "Last name",
-      "email": "Business email",
-      "company": "Company",
-      "message": "What would you like to discuss?",
-      "submit": "Contact Sales",
-      "success": "Thanks — your message is ready to be sent to the GTTNano team."
-    },
-    "footer": {
-      "products": "Products",
-      "company": "Company",
-      "links": {
-        "about": "About Us",
-        "technology": "Technology Platform",
-        "applications": "Applications",
-        "investors": "Investors",
-        "dx": "GTTN-Dx / GTTN-SCI",
-        "navi": "GTTN-Navi",
-        "tx": "GTTN-Tx",
-        "next": "Next in Line"
+    "title": "Get In Touch",
+    "subtitle": "Ready to explore how our Integrated Veterinary Technology Platform can transform your veterinary practice? Let's start a conversation.",
+    "requestDemo": "Request a Demo",
+    "platformLine1": "Integrated Veterinary",
+    "platformLine2": "Technology Platform",
+    "platformBody": "Integrated Veterinary Technology Platform advanced medical devices and digital solutions designed to enhance veterinary care-from diagnostics and imaging to health kiosks and integrated platforms.",
+    "cards": {
+      "visit": {
+        "title": "Visit Us",
+        "line1": "3 TAI SENG AVENUE, #04-36",
+        "line2": "TAI SENG EXCHANGE",
+        "line3": "Singapore 536465"
       },
-      "rights": "© 2026 GTTNano Medical Systems. All rights reserved.",
+      "email": {
+        "title": "Email Us",
+        "primaryUser": "contact",
+        "salesUser": "sales",
+        "domain": "8xpet.com"
+      },
+      "phone": {
+        "title": "Call Us",
+        "line1": "+1 (800) 555-0199",
+        "line2": "+65 6123 4567"
+      }
+    },
+    "steps": {
+      "needs": {
+        "title": "Tell us about your needs",
+        "copy": "Share your current challenges and goals"
+      },
+      "consultation": {
+        "title": "Schedule a consultation",
+        "copy": "Meet with our technical team"
+      },
+      "solution": {
+        "title": "Get a custom solution",
+        "copy": "Receive tailored recommendations"
+      }
+    },
+    "form": {
+      "fullName": "Full Name *",
+      "email": "Email Address *",
+      "company": "Company",
+      "phone": "Phone Number",
+      "message": "How can we help? *",
+      "namePlaceholder": "John Smith",
+      "emailPlaceholder": "john at company.com",
+      "companyPlaceholder": "Your Company Name",
+      "phonePlaceholder": "+1 (555) 000-0000",
+      "messagePlaceholder": "Tell us about your project and goals...",
+      "submit": "Send Message"
+    }
+  },
+  "detail": {
+    "shared": {
+      "healthApplication": "Health Application",
+      "softwareLabel": "The Software",
+      "softwareSubtitle": "Parallel Testing with Real-Time Status",
+      "marketLabel": "Market Applications",
+      "marketTitle": "Go-To-Market Channels.",
+      "comingDetail": "Product Detail",
+      "comingSoon": "Coming Soon",
+      "comingBody": "{title} detail page is being prepared. Our team is polishing the specs, workflow story, and product visuals.",
+      "backToProducts": "Back to Products",
+      "softwareBenefits": {
+        "ecosystem": {
+          "title": "Cross-Platform Ecosystem",
+          "copy": "Runs natively on iOS, Android, and Windows. Control the device via rugged tablets in the field or your personal phone."
+        },
+        "interpretation": {
+          "title": "Automated Interpretation",
+          "copy": "Advanced algorithms analyze results instantly, delivering a clear decision-ready result."
+        },
+        "reporting": {
+          "title": "Instant Reporting",
+          "copy": "Auto-generate professional PDF reports immediately and sync results to the clinical record."
+        }
+      },
+      "healthApplications": {
+        "efficiency": {
+          "title": "Efficiency-focused",
+          "copy": "Detects key periodontal pathogens from a single oral swab in approximately 40 minutes."
+        },
+        "screening": {
+          "title": "Oral Screening Support",
+          "copy": "Provides structured pathogen-detection results to support dental screening, case triage, and follow-up discussions."
+        },
+        "workflow": {
+          "title": "Veterinary Dental Workflow",
+          "copy": "Suitable for use before dental procedures, during periodontal workups, and for follow-up monitoring where clinically indicated."
+        }
+      },
+      "markets": {
+        "hospitals": "Veterinary Hospitals",
+        "dentalSpecialists": "Veterinary Dental Specialists",
+        "diagnosticLabs": "Animal Diagnostic Laboratories"
+      }
+    },
+    "pcr": {
+      "heroTitle": "Rapid Veterinary Molecular",
+      "heroSubtitle": "Diagnostics Canine & Feline Periodontal qPCR",
+      "introTitle": "qPCR-DX 1 for Veterinary Clinics",
+      "introBody": "An expanding companion-animal qPCR menu covering oral health, respiratory disease, gastrointestinal infection, vector-borne disease, and specialty molecular testing.",
+      "heroStats": {
+        "rapidAmplification": "40-Min Rapid Amplification",
+        "singleDoseBeads": "Single-Dose Lyophilized Beads",
+        "roomTemperature": "Room Temperature Storage & Transport"
+      },
+      "features": {
+        "beadTechnology": {
+          "title": "Single-Dose Lyophilized Bead Technology",
+          "copy": "Simplifies workflow and supports room-temperature logistics."
+        },
+        "amplificationEngine": {
+          "title": "Rapid Amplification Engine",
+          "copy": "The rapid qPCR workflow shortens time to result to approximately 40 minutes."
+        },
+        "integratedEcosystem": {
+          "title": "Integrated Instrument and Reagent Ecosystem",
+          "copy": "Hardware, reagent, and workflow designed together for stable and reproducible testing."
+        }
+      },
+      "healthTitle": "Oral Pathogen Screening for Veterinary Dental Workflows",
+      "technicalLabel": "Technical Comparison",
+      "technicalTitle": "Designed for Veterinary Molecular Workflows.",
+      "specs": {
+        "aspect": {
+          "label": "Aspect",
+          "value": "Lyophilized POCT System"
+        },
+        "reagentLogistics": {
+          "label": "Reagent Logistics",
+          "value": "Room-temperature storage and transport"
+        },
+        "setup": {
+          "label": "Setup",
+          "value": "Ready-to-use single-dose lyophilized beads"
+        },
+        "timeToResult": {
+          "label": "Time to Result",
+          "value": "~40 minutes"
+        },
+        "workflowFormat": {
+          "label": "Workflow Format",
+          "value": "Integrated instrument-and-assay workflow"
+        }
+      },
+      "softwareTitle": "User-Friendly Veterinary qPCR Software",
+      "finalTitle": "Supports 100+ Animal Disease",
+      "finalBullets": {
+        "oralHealth": "Oral health and veterinary dental workflows",
+        "respiratory": "Respiratory infectious disease testing",
+        "gastrointestinal": "Gastrointestinal pathogen testing",
+        "vectorBorne": "Vector-borne and zoonotic disease testing",
+        "specialty": "Specialty and regional molecular assays"
+      }
+    },
+    "lateralFlow": {
+      "heroTitle": "Redefining Pet Oral Health Screening",
+      "heroSubtitle": "Diagnostics Canine & Feline Periodontal qPCR",
+      "introTitle": "8IVD Lateral Flow (Rapid Screening)",
+      "introBody": "Our portable immunofluorescence analyzer automatically times, reads, and prints test results, reducing subjectivity from visual interpretation.",
+      "heroStats": {
+        "fastResults": "Results in 10-15 Mins",
+        "digitalReports": "Objective Digital Reports",
+        "roomTemperature": "Room-Temperature Storage"
+      },
+      "features": {
+        "objectiveReading": {
+          "title": "Smart & Objective Reading",
+          "copy": "Analyzer automatically times, reads, and prints test results, reducing subjectivity."
+        },
+        "stabilizedReagents": {
+          "title": "Stabilized Lyophilized Reagents",
+          "copy": "Our reagents use a stabilized lyophilized formulation for convenient room-temperature handling."
+        },
+        "rapidTurnaround": {
+          "title": "Rapid Turnaround",
+          "copy": "From oral swab to printed report in 10-15 minutes."
+        }
+      },
+      "healthTitle": "The Ultimate Tool for Screening & Communication",
+      "technicalLabel": "Technical Specification",
+      "technicalTitle": "Foolproof Operation. Empowering Every Vet.",
+      "specs": {
+        "targetMarker": {
+          "label": "Target Marker",
+          "value": "Porphyromonas gulae (P. gulae) antigen"
+        },
+        "applicableSpecies": {
+          "label": "Applicable Species",
+          "value": "Canine & Feline"
+        },
+        "sampleType": {
+          "label": "Sample Type",
+          "value": "Oral swab"
+        },
+        "testPrinciple": {
+          "label": "Test Principle",
+          "value": "Immunofluorescence lateral flow assay"
+        },
+        "analyzerReadout": {
+          "label": "Analyzer Readout",
+          "value": "Instrument-read digital result with printable report"
+        },
+        "turnaroundTime": {
+          "label": "Turnaround Time (TAT)",
+          "value": "10-15 minutes"
+        },
+        "storageTransport": {
+          "label": "Storage & Transport",
+          "value": "2C-30C"
+        },
+        "testingLocation": {
+          "label": "Testing Location",
+          "value": "Veterinary clinic / point of care"
+        }
+      },
+      "softwareTitle": "User-Friendly Veterinary Software",
+      "finalTitle": "Scalable Companion Animal Point-of-Care Testing",
+      "finalBullets": {
+        "dental": "Dental & oral health: pet oral-health screening and preventive care applications.",
+        "infectious": "Infectious diseases: antigen and antibody tests for common canine and feline infectious diseases.",
+        "inflammation": "Inflammation & digestive health: cCRP, fSAA, cPL, and fPL.",
+        "markers": "Cardiac, endocrine, and renal health markers."
+      }
+    },
+    "xray": {
+      "heroTitle": "Diagnostics Without Delay",
+      "heroSubtitle": "Capture. Analyze. Prevent.",
+      "introTitle": "DX-1 Digital X-Ray",
+      "introBody": "Our portable digital x-ray automatically times, reads, and prints test results, reducing subjectivity from visual interpretation.",
+      "features": {
+        "nonMydriatic": {
+          "title": "Non-MyDriatic Imaging",
+          "copy": "Seamless integration with DR / CR x-ray systems."
+        },
+        "autofocus": {
+          "title": "Autofocus + Auto-Exposure",
+          "copy": "Point + Align + Capture. The system handles everything else."
+        },
+        "lightweight": {
+          "title": "Lightweight Field Design",
+          "copy": "Weighs under 2 kg, ideal for mobile screening and outreach programs."
+        }
+      },
+      "healthTitle": "",
+      "technicalLabel": "Technical Specification",
+      "technicalTitle": "Foolproof Operation. Empowering Every Vet.",
+      "specs": {
+        "detectorType": {
+          "label": "Detector Type",
+          "value": "Flat Panel Detector (a-Si / CsI)"
+        },
+        "aiAnalysis": {
+          "label": "AI Analysis",
+          "value": "Yes"
+        },
+        "dynamicRange": {
+          "label": "Dynamic Range",
+          "value": "16-bit"
+        },
+        "pixelPitch": {
+          "label": "Pixel Pitch",
+          "value": "140 - 160 um"
+        },
+        "heatCapacity": {
+          "label": "Heat Capacity",
+          "value": "300 - 400 kHU"
+        },
+        "systemType": {
+          "label": "System Type",
+          "value": "Mobile / Portable Digital X-Ray"
+        },
+        "connectivity": {
+          "label": "Connectivity",
+          "value": "Wi-Fi / Ethernet / Optional 4G-5G"
+        }
+      },
+      "softwareTitle": "User-Friendly Veterinary X-Ray Software",
+      "finalTitle": ""
+    }
+  },
+  "footer": {
+    "description": "Advanced medical devices and software platforms transforming veterinary diagnostics and clinical workflows worldwide.",
+    "products": "Products",
+    "company": "Company",
+    "contact": "Contact",
+    "links": {
+      "about": "About Us",
+      "technology": "Technology Platform",
+      "applications": "Applications",
+      "investors": "Investors",
+      "careers": "Careers",
       "privacy": "Privacy Policy",
       "terms": "Terms of Service",
       "legal": "Legal"
-    }
+    },
+    "emailUser": "contact",
+    "emailDomain": "8xpet.com",
+    "rights": "© 2026 8xPet Medical Systems. All rights reserved."
   }
 }

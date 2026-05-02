@@ -5,269 +5,486 @@
     "zh": "中文"
   },
   "languageSwitcher": {
-    "shortEn": "EN",
-    "shortId": "ID",
+    "shortEn": "English",
+    "shortId": "Indonesia",
     "shortZh": "中文"
   },
   "common": {
-    "logoAlt": "GTTNano",
-    "demoCta": "申请现场演示",
-    "exploreCta": "探索平台",
-    "contactSales": "联系销售"
+    "logoAlt": "8xPet",
+    "homeAria": "8xPet首页",
+    "requestDemo": "申请演示",
+    "contactDemo": "联系获取演示",
+    "exploreProducts": "探索产品",
+    "learnMore": "了解更多",
+    "viewAllProducts": "查看全部产品",
+    "contactSales": "联系销售",
+    "talkToSales": "咨询销售"
   },
   "nav": {
-    "about": "关于",
-    "technology": "技术",
-    "pipeline": "产品管线",
+    "home": "首页",
+    "about": "关于公司",
+    "products": "产品",
     "contact": "联系我们",
     "openNav": "打开导航",
-    "closeMenu": "关闭导航"
+    "closeNav": "关闭导航",
+    "diagnosticDevices": "诊断设备",
+    "imagingHardware": "影像与硬件",
+    "smartSystems": "智能系统",
+    "platform": "平台"
   },
-  "hero": {
-    "kicker": "AI原生纳米精准肿瘤平台",
-    "title": "早期癌症检测的未来",
-    "subtitle": "全球首个AI原生纳米精准平台，旨在彻底改变我们检测和治疗癌症的方式。",
-    "primaryCta": "申请现场演示",
-    "secondaryCta": "探索平台",
-    "cardTitle": "面向未来的创新",
-    "cardBody": "模块化平台，涵盖早期筛查、手术导航和下一代治疗药物递送。",
-    "imageAlt": "GTTNano精准靶向可视化"
-  },
-  "problem": {
-    "kicker": "问题所在",
-    "title": "精准度不足导致晚期检测、毒性治疗和手术盲猜。",
-    "subtitle": "从漏诊到手术不彻底——癌症治疗需要更精准的工具。",
-    "cards": {
-      "gap": {
-        "title": "精准差距",
-        "desc": "弥合肿瘤学在诊断、手术和治疗方面的精准缺口可挽救数百万生命——这是一个价值4000亿美元、等待爆发的市场机遇"
+  "home": {
+    "hero": {
+      "titleLine1": "一体化兽医",
+      "titleLine2": "技术平台",
+      "subtitle": "先进医疗设备与数字解决方案，覆盖诊断、影像、健康自助终端和一体化平台，帮助提升兽医护理质量。"
+    },
+    "pillars": {
+      "kicker": "核心支柱",
+      "title": "一体化生态系统",
+      "subtitle": "我们的完整方案无缝连接硬件与软件，支持诊所从接诊到诊断的全过程。",
+      "diagnostics": {
+        "title": "诊断",
+        "desc": "实验室级即时检测。从快速侧向层析到复杂PCR分子诊断，在数分钟内交付准确结果。"
       },
-      "limitations": {
-        "title": "传统局限",
-        "desc": "\"传统EPR和配体靶向系统导致超过95%的治疗偏离靶点，效率低下，在健康器官中意外积聚，并具有长期毒性。\""
+      "imaging": {
+        "title": "影像",
+        "desc": "清晰的数字放射成像。先进传感器和AI辅助分析为软组织和骨科提供更高解析度。"
       },
-      "opportunity": {
-        "title": "临床机遇",
-        "desc": "GTTNano靶向肿瘤细胞核，实现更早的信号检测、更清晰的手术边界，以及整个治疗路径中更高价值的干预。"
+      "smartSystems": {
+        "title": "智能系统",
+        "desc": "自动化临床流程。通过智能终端简化患者登记、生命体征采集和数据同步。"
       }
-    }
-  },
-  "showcase": {
-    "kicker": "工作原理",
-    "title": "纳米精准新纪元",
-    "subtitle": "与传统EPR或配体介导系统不同，GTTNano采用细胞膜通透性靶向技术，选择性穿透肿瘤细胞并在细胞核中积聚。",
-    "cards": {
-      "detection": {
-        "title": "超灵敏早期检测",
-        "desc": "更高的信号保真度，在症状明显之前检测恶性变化。"
+    },
+    "portfolio": {
+      "kicker": "产品组合",
+      "title": "先进医疗设备"
+    },
+    "workflow": {
+      "kicker": "临床流程",
+      "title": "从样本到临床决策",
+      "subtitle": "直观的平台可顺畅融入繁忙诊疗工作，减少手动步骤。",
+      "stepLabel": "步骤 {number}",
+      "sample": {
+        "title": "样本",
+        "desc": "直接从患者采集微创样本。"
       },
-      "navigation": {
-        "title": "实时荧光导航",
-        "desc": "更精准的术中指导，用于确定切缘和识别转移扩散。"
+      "device": {
+        "title": "设备",
+        "desc": "使用直观医疗硬件进行自动化处理。"
       },
-      "delivery": {
-        "title": "高效低毒递送",
-        "desc": "更多有效载荷到达恶性组织，同时将全身暴露降至最低。"
+      "result": {
+        "title": "结果",
+        "desc": "数分钟内获得实验室级准确诊断数据。"
+      },
+      "decision": {
+        "title": "决策",
+        "desc": "快速、自信地做出治疗决策。"
       }
-    }
-  },
-  "hardware": {
-    "kicker": "工作原理",
-    "title": "CMPT：全新靶向范式",
-    "subtitle": "下一代靶向机制",
-    "table": {
-      "headers": {
-        "feature": "特征",
-        "cmpt": "CMPT（细胞膜通透性靶向）",
-        "epr": "EPR（增强渗透和保留）",
-        "ligand": "配体介导靶向"
+    },
+    "why": {
+      "kicker": "为何重要",
+      "title": "提升兽医护理标准",
+      "subtitle": "我们将企业级医疗技术直接带入兽医诊所，帮助医生为动物患者提供接近人类医疗标准的护理。",
+      "imageAlt": "兽医正在使用诊断设备",
+      "badgeTitle": "实验室级准确度",
+      "badgeSubtitle": "金标准验证",
+      "fasterDiagnosis": {
+        "title": "更快诊断",
+        "desc": "将等待时间从数天缩短至数分钟，让患者仍在诊所时即可进行干预。"
       },
-      "rows": [
-        {
-          "feature": "靶向部位",
-          "cmpt": "肿瘤细胞核",
-          "epr": "肿瘤组织",
-          "ligand": "特定肿瘤位点"
-        },
-        {
-          "feature": "靶向效率",
-          "cmpt": "> 50%",
-          "epr": "< 5%",
-          "ligand": "< 5%"
-        },
-        {
-          "feature": "靶向机制",
-          "cmpt": "肿瘤细胞膜通透性改变",
-          "epr": "肿瘤血管渗漏",
-          "ligand": "配体与受体特异性结合"
-        },
-        {
-          "feature": "体内分布",
-          "cmpt": "在正常组织中无显著积聚",
-          "epr": "在肝脏/肾脏中存留数月乃至数年",
-          "ligand": "分布于肝脏和肾脏"
-        },
-        {
-          "feature": "毒性",
-          "cmpt": "无毒",
-          "epr": "长期毒性",
-          "ligand": "长期毒性"
-        }
-      ]
-    }
-  },
-  "benefits": {
-    "kicker": "毒性极低，跨物种验证",
-    "title": "卓越的生物相容性",
-    "cards": {
-      "cellSafe": {
-        "title": "细胞安全",
-        "desc": "体外测试表明，即使在高浓度和长时间暴露下，对活细胞也无显著毒性。"
+      "betterOutcomes": {
+        "title": "更好结果",
+        "desc": "高灵敏分子诊断和影像可更早发现潜在问题，显著改善预后。"
       },
-      "systemic": {
-        "title": "无全身毒性",
-        "desc": "静脉注射后，GTTN对器官功能、生殖或血液化学无有害影响。"
-      },
-      "hepatic": {
-        "title": "无肝毒性",
-        "desc": "肝功能保持正常，在大型动物模型中证实了优异的生物相容性。"
-      },
-      "environment": {
-        "title": "无环境毒性",
-        "desc": "斑马鱼胚胎测试未发现任何发育或生态毒性。"
+      "simplifiedWorkflow": {
+        "title": "简化流程",
+        "desc": "自动化系统所需培训极少，让技术人员把更多时间投入患者护理。"
       }
+    },
+    "cta": {
+      "title": "立即升级您的兽医诊疗",
+      "subtitle": "加入前瞻型诊所，利用我们的平台提供更优护理并提升临床效率。",
+      "primary": "预约咨询",
+      "secondary": "探索检测菜单"
     }
   },
-  "oneHealth": {
-    "kicker": "AI是核心",
-    "title": "全球首个AI原生纳米生物合成",
-    "cards": {
-      "omics": {
-        "title": "新生物学，新组学",
-        "desc": "TransCellOmics：首个AI驱动的通透性数据库和预测模型。"
+  "products": {
+    "categories": {
+      "diagnostics": "诊断",
+      "imaging": "影像",
+      "smartSystems": "智能系统",
+      "platform": "平台"
+    },
+    "items": {
+      "pcr": {
+        "title": "PCR分子诊断",
+        "desc": "先进PCR检测能力，可快速、精准检测传染性疾病。",
+        "menuDesc": "先进PCR检测"
       },
-      "generative": {
-        "title": "生成式AI遇见纳米设计",
-        "desc": "将GTTNano灵活的合成能力与AI相结合，打造高价值产品。"
+      "lateralFlow": {
+        "title": "侧向层析快速检测",
+        "desc": "小巧可靠的快速检测，用于常见兽医疾病的即时筛查。",
+        "menuDesc": "小巧可靠"
       },
-      "dimension": {
-        "title": "多组学新维度",
-        "desc": "引入关于细胞膜通透性的实时空间解析数据。"
+      "miniCube": {
+        "title": "Mini Cube分析仪",
+        "desc": "面向现代节省空间诊所的革命性血液学与生化分析仪。",
+        "menuDesc": "革命性分析仪"
+      },
+      "xray": {
+        "title": "宠物X射线设备",
+        "desc": "为兽医解剖特点定制的新一代数字放射成像，辐射暴露更低。",
+        "menuDesc": "新一代数字影像"
+      },
+      "petHealthKiosk": {
+        "title": "宠物健康自助终端",
+        "desc": "自动化接诊与分诊系统，在医生进诊室前采集生命体征、体重和主人问卷。",
+        "menuDesc": "自动化接诊系统"
+      },
+      "cro": {
+        "title": "宠物CRO系统",
+        "desc": "连接设备、日程和患者记录的一体化软件核心。",
+        "menuDesc": "连接全部流程的软件核心"
+      },
+      "booking": {
+        "title": "兽医预约系统",
+        "desc": "支持就诊、诊断和随访护理的预约流程。",
+        "menuDesc": "探索检测项目和临床场景。"
+      },
+      "croBooking": {
+        "title": "宠物CRO与预约系统",
+        "desc": "将设备、日程和患者记录整合到单一临床视图的软件平台。",
+        "menuDesc": "临床记录与预约一体化"
       }
+    },
+    "page": {
+      "kicker": "产品",
+      "titleLine1": "先进医疗设备",
+      "titleLine2": "专为兽医护理打造",
+      "subtitle": "诊断、影像和智能系统协同工作，旨在提升临床准确性和效率。",
+      "viewDetails": "查看详情",
+      "comingSoon": "即将推出",
+      "ctaTitle": "需要帮助选择合适设备？",
+      "ctaSubtitle": "我们的专家会为您的诊所配置合适方案。"
     }
   },
-  "software": {
-    "kicker": "可能性管线",
-    "title": "平台技术",
-    "cards": {
-      "dx": {
-        "title": "GTTN-Dx\nGTTN-SCI",
-        "desc": "用于癌症早期筛查和研究。产品已获cFDA注册批准，现已商业化。",
-        "plain": "用于癌症早期筛查和研究。产品已获cFDA注册批准，现已",
-        "bold": "商业化上市。"
-      },
-      "navi": {
-        "title": "GTTN-Navi",
-        "desc": "已被归类为III类医疗器械，正在接受突破性器械审查，预计2026–2027年获批。",
-        "plain": "已被归类为III类医疗器械，正在接受突破性器械审查，",
-        "bold": "预计2026–2027年获批。"
-      },
-      "tx": {
-        "title": "GTTN-Tx",
-        "desc": "已获药械组合分类，现正接受创新器械审查，预计2029年获批。",
-        "plain": "已获药械组合分类，现正接受创新器械审查，预计",
-        "bold": "2029年获批。"
-      },
-      "next": {
-        "title": "下一步",
-        "desc": "淋巴肿瘤导航、CT/MRI造影剂和放射性药物载体，多个即将进入监管申报。",
-        "plain": "淋巴肿瘤导航、CT/MRI造影剂和放射性药物载体，多个即将",
-        "bold": "进入监管申报。"
-      }
+  "about": {
+    "heroAlt": "兽医正在照顾一只狗",
+    "kicker": "关于我们",
+    "title": "以技术提升兽医护理",
+    "subtitle": "8xPet由兽医专家和医疗科技工程师团队创立，致力于把人类医疗级诊断工具带给全球动物健康专业人员。",
+    "missionTitle": "我们的使命",
+    "missionBody": "用智能、快速、易用的诊断工具赋能兽医团队，改善患者结果并简化临床运营。",
+    "visionTitle": "我们的愿景",
+    "visionBody": "让每一家兽医诊所，无论规模大小，都能在即时护理场景中完成高度准确的复杂诊断。",
+    "stats": {
+      "clinics": "全球诊所",
+      "tests": "已完成检测",
+      "accuracy": "诊断准确度",
+      "support": "临床支持"
     }
-  },
-  "library": {
-    "kicker": "产品聚焦",
-    "title": "为筛查、手术和研究而构建",
-    "products": {
-      "dx": {
-        "eyebrow": "GTTN-Dx：早期癌症筛查",
-        "title": "症状出现前筛查",
-        "desc": "针对多种肿瘤类型的广谱癌症风险检测，经济实惠，操作简便，成本和复杂度最低。",
-        "points": [
-          "高灵敏度分子检测",
-          "与标准临床影像流程兼容",
-          "已通过cFDA注册，商业化可用"
-        ]
-      },
-      "navi": {
-        "eyebrow": "GTTN-Navi：赋能病理学家和外科医生",
-        "title": "映射每个病灶，引导每一步操作。",
-        "desc": "实时肿瘤边界可视化让临床医生获得更清晰的切缘、更明确的转移图谱和更自信的干预决策。",
-        "points": [
-          "实时肿瘤边界可视化",
-          "个性化肿瘤图谱辅助决策",
-          "III类器械，正接受突破性器械审查"
-        ]
-      },
-      "science": {
-        "eyebrow": "认证",
-        "title": "已获cFDA注册批准",
-        "desc": "商业化部署现已支持临床筛查流程和转化研究，连接实验室发现与真实肿瘤学实践。",
-        "points": [
-          "临床合规已建立",
-          "商业化部署进行中",
-          "支持转化研究"
-        ]
-      }
-    }
-  },
-  "cta": {
-    "kicker": "为什么是现在？",
-    "title": "千载难逢的拐点时刻",
-    "bullets": [
-      "AI与纳米精准的融合：生成式AI和可编程纳米材料使这成为推出为二者原生构建平台的最佳时机。",
-      "赋能下一代手术机器人：核级靶向和荧光引导可成为更智能干预的视觉层。"
-    ],
-    "cardTitle": "准备好现场查看平台了吗？",
-    "cardBody": "与GTTNano探讨产品就绪情况、临床定位和商业部署。",
-    "button": "申请现场演示"
   },
   "contact": {
-    "title": "联系GTTNano",
-    "subtitle": "全球首个AI原生纳米精准平台，旨在彻底改变我们检测和治疗癌症的方式。",
-    "addressLabel": "地址",
-    "address": "新加坡大成路3号#04-36大成交易所 536465",
-    "emailLabel": "电子邮件",
-    "email": "contact{'@'}GTTNano.com",
-    "phoneLabel": "电话",
-    "phone": "+1 (800) 555-0199",
-    "form": {
-      "firstName": "名字",
-      "lastName": "姓氏",
-      "email": "企业邮箱",
-      "company": "公司",
-      "message": "您想讨论什么？",
-      "submit": "联系销售",
-      "success": "感谢您——您的消息已准备好发送给GTTNano团队。"
-    },
-    "footer": {
-      "products": "产品",
-      "company": "公司",
-      "links": {
-        "about": "关于我们",
-        "technology": "技术平台",
-        "applications": "应用",
-        "investors": "投资者",
-        "dx": "GTTN-Dx / GTTN-SCI",
-        "navi": "GTTN-Navi",
-        "tx": "GTTN-Tx",
-        "next": "下一步"
+    "title": "联系我们",
+    "subtitle": "准备了解我们的一体化兽医技术平台如何改变您的兽医实践吗？让我们开始交流。",
+    "requestDemo": "申请演示",
+    "platformLine1": "一体化兽医",
+    "platformLine2": "技术平台",
+    "platformBody": "一体化兽医技术平台提供先进医疗设备和数字解决方案，覆盖诊断、影像、健康自助终端和一体化平台，帮助提升兽医护理。",
+    "cards": {
+      "visit": {
+        "title": "拜访我们",
+        "line1": "3 TAI SENG AVENUE, #04-36",
+        "line2": "TAI SENG EXCHANGE",
+        "line3": "Singapore 536465"
       },
-      "rights": "© 2026 GTTNano医疗系统。保留所有权利。",
+      "email": {
+        "title": "发送邮件",
+        "primaryUser": "contact",
+        "salesUser": "sales",
+        "domain": "8xpet.com"
+      },
+      "phone": {
+        "title": "致电我们",
+        "line1": "+1 (800) 555-0199",
+        "line2": "+65 6123 4567"
+      }
+    },
+    "steps": {
+      "needs": {
+        "title": "告诉我们您的需求",
+        "copy": "分享当前挑战和目标"
+      },
+      "consultation": {
+        "title": "安排咨询",
+        "copy": "与我们的技术团队会面"
+      },
+      "solution": {
+        "title": "获得定制方案",
+        "copy": "收到量身定制的建议"
+      }
+    },
+    "form": {
+      "fullName": "姓名 *",
+      "email": "电子邮箱 *",
+      "company": "公司",
+      "phone": "电话号码",
+      "message": "我们可以如何帮助？ *",
+      "namePlaceholder": "John Smith",
+      "emailPlaceholder": "john at company.com",
+      "companyPlaceholder": "您的公司名称",
+      "phonePlaceholder": "+1 (555) 000-0000",
+      "messagePlaceholder": "请告诉我们您的项目和目标...",
+      "submit": "发送消息"
+    }
+  },
+  "detail": {
+    "shared": {
+      "healthApplication": "健康应用",
+      "softwareLabel": "软件",
+      "softwareSubtitle": "实时状态下的并行检测",
+      "marketLabel": "市场应用",
+      "marketTitle": "上市渠道。",
+      "comingDetail": "产品详情",
+      "comingSoon": "即将推出",
+      "comingBody": "{title}详情页正在准备中。我们的团队正在完善规格、流程故事和产品视觉。",
+      "backToProducts": "返回产品",
+      "softwareBenefits": {
+        "ecosystem": {
+          "title": "跨平台生态系统",
+          "copy": "原生运行于iOS、Android和Windows。可通过现场加固平板或个人手机控制设备。"
+        },
+        "interpretation": {
+          "title": "自动解读",
+          "copy": "先进算法即时分析结果，输出清晰、可用于决策的结果。"
+        },
+        "reporting": {
+          "title": "即时报告",
+          "copy": "自动生成专业PDF报告，并将结果同步到临床记录。"
+        }
+      },
+      "healthApplications": {
+        "efficiency": {
+          "title": "聚焦效率",
+          "copy": "通过一次口腔拭子在约40分钟内检测关键牙周病原体。"
+        },
+        "screening": {
+          "title": "口腔筛查支持",
+          "copy": "提供结构化病原体检测结果，支持牙科筛查、病例分诊和随访沟通。"
+        },
+        "workflow": {
+          "title": "兽医牙科流程",
+          "copy": "适用于牙科手术前、牙周检查期间，以及临床指征下的随访监测。"
+        }
+      },
+      "markets": {
+        "hospitals": "兽医院",
+        "dentalSpecialists": "兽医牙科专家",
+        "diagnosticLabs": "动物诊断实验室"
+      }
+    },
+    "pcr": {
+      "heroTitle": "快速兽医分子诊断",
+      "heroSubtitle": "犬猫牙周qPCR诊断",
+      "introTitle": "面向兽医诊所的qPCR-DX 1",
+      "introBody": "不断扩展的伴侣动物qPCR菜单，覆盖口腔健康、呼吸道疾病、胃肠道感染、媒介传播疾病和专项分子检测。",
+      "heroStats": {
+        "rapidAmplification": "40分钟快速扩增",
+        "singleDoseBeads": "单剂量冻干微珠",
+        "roomTemperature": "常温储存与运输"
+      },
+      "features": {
+        "beadTechnology": {
+          "title": "单剂量冻干微珠技术",
+          "copy": "简化流程，并支持常温物流。"
+        },
+        "amplificationEngine": {
+          "title": "快速扩增引擎",
+          "copy": "快速qPCR流程将出结果时间缩短至约40分钟。"
+        },
+        "integratedEcosystem": {
+          "title": "仪器与试剂一体化生态",
+          "copy": "硬件、试剂和流程协同设计，确保检测稳定且可重复。"
+        }
+      },
+      "healthTitle": "面向兽医牙科流程的口腔病原体筛查",
+      "technicalLabel": "技术对比",
+      "technicalTitle": "专为兽医分子流程设计。",
+      "specs": {
+        "aspect": {
+          "label": "方面",
+          "value": "冻干POCT系统"
+        },
+        "reagentLogistics": {
+          "label": "试剂物流",
+          "value": "常温储存和运输"
+        },
+        "setup": {
+          "label": "设置",
+          "value": "即用型单剂量冻干微珠"
+        },
+        "timeToResult": {
+          "label": "出结果时间",
+          "value": "约40分钟"
+        },
+        "workflowFormat": {
+          "label": "流程形式",
+          "value": "仪器与检测一体化流程"
+        }
+      },
+      "softwareTitle": "易用型兽医qPCR软件",
+      "finalTitle": "支持100+动物疾病",
+      "finalBullets": {
+        "oralHealth": "口腔健康和兽医牙科流程",
+        "respiratory": "呼吸道传染病检测",
+        "gastrointestinal": "胃肠道病原体检测",
+        "vectorBorne": "媒介传播和人兽共患病检测",
+        "specialty": "专项和区域分子检测"
+      }
+    },
+    "lateralFlow": {
+      "heroTitle": "重新定义宠物口腔健康筛查",
+      "heroSubtitle": "犬猫牙周qPCR诊断",
+      "introTitle": "8IVD侧向层析（快速筛查）",
+      "introBody": "我们的便携式免疫荧光分析仪可自动计时、读取并打印检测结果，减少视觉判读的主观性。",
+      "heroStats": {
+        "fastResults": "10-15分钟出结果",
+        "digitalReports": "客观数字报告",
+        "roomTemperature": "常温储存"
+      },
+      "features": {
+        "objectiveReading": {
+          "title": "智能客观读取",
+          "copy": "分析仪自动计时、读取并打印检测结果，减少主观性。"
+        },
+        "stabilizedReagents": {
+          "title": "稳定冻干试剂",
+          "copy": "试剂采用稳定冻干配方，便于常温处理。"
+        },
+        "rapidTurnaround": {
+          "title": "快速周转",
+          "copy": "从口腔拭子到打印报告仅需10-15分钟。"
+        }
+      },
+      "healthTitle": "筛查与沟通的理想工具",
+      "technicalLabel": "技术规格",
+      "technicalTitle": "操作简单，赋能每位兽医。",
+      "specs": {
+        "targetMarker": {
+          "label": "目标标志物",
+          "value": "牙龈卟啉单胞菌（P. gulae）抗原"
+        },
+        "applicableSpecies": {
+          "label": "适用物种",
+          "value": "犬和猫"
+        },
+        "sampleType": {
+          "label": "样本类型",
+          "value": "口腔拭子"
+        },
+        "testPrinciple": {
+          "label": "检测原理",
+          "value": "免疫荧光侧向层析检测"
+        },
+        "analyzerReadout": {
+          "label": "分析仪读数",
+          "value": "仪器读取数字结果，并支持打印报告"
+        },
+        "turnaroundTime": {
+          "label": "周转时间（TAT）",
+          "value": "10-15分钟"
+        },
+        "storageTransport": {
+          "label": "储存与运输",
+          "value": "2C-30C"
+        },
+        "testingLocation": {
+          "label": "检测地点",
+          "value": "兽医诊所 / 即时护理点"
+        }
+      },
+      "softwareTitle": "易用型兽医软件",
+      "finalTitle": "可扩展的伴侣动物即时检测",
+      "finalBullets": {
+        "dental": "牙科与口腔健康：宠物口腔健康筛查和预防护理应用。",
+        "infectious": "传染病：常见犬猫传染病的抗原和抗体检测。",
+        "inflammation": "炎症与消化健康：cCRP、fSAA、cPL和fPL。",
+        "markers": "心脏、内分泌和肾脏健康标志物。"
+      }
+    },
+    "xray": {
+      "heroTitle": "诊断无需等待",
+      "heroSubtitle": "采集。分析。预防。",
+      "introTitle": "DX-1数字X射线",
+      "introBody": "我们的便携式数字X射线可自动计时、读取并打印检测结果，减少视觉判读的主观性。",
+      "features": {
+        "nonMydriatic": {
+          "title": "免散瞳成像",
+          "copy": "与DR / CR X射线系统无缝集成。"
+        },
+        "autofocus": {
+          "title": "自动对焦 + 自动曝光",
+          "copy": "指向 + 对齐 + 拍摄，剩余步骤由系统完成。"
+        },
+        "lightweight": {
+          "title": "轻量化现场设计",
+          "copy": "重量低于2 kg，适合移动筛查和外展项目。"
+        }
+      },
+      "healthTitle": "",
+      "technicalLabel": "技术规格",
+      "technicalTitle": "操作简单，赋能每位兽医。",
+      "specs": {
+        "detectorType": {
+          "label": "探测器类型",
+          "value": "平板探测器（a-Si / CsI）"
+        },
+        "aiAnalysis": {
+          "label": "AI分析",
+          "value": "是"
+        },
+        "dynamicRange": {
+          "label": "动态范围",
+          "value": "16-bit"
+        },
+        "pixelPitch": {
+          "label": "像素间距",
+          "value": "140 - 160 um"
+        },
+        "heatCapacity": {
+          "label": "热容量",
+          "value": "300 - 400 kHU"
+        },
+        "systemType": {
+          "label": "系统类型",
+          "value": "移动 / 便携式数字X射线"
+        },
+        "connectivity": {
+          "label": "连接方式",
+          "value": "Wi-Fi / Ethernet / 可选4G-5G"
+        }
+      },
+      "softwareTitle": "易用型兽医X射线软件",
+      "finalTitle": ""
+    }
+  },
+  "footer": {
+    "description": "先进医疗设备和软件平台，正在改变全球兽医诊断和临床流程。",
+    "products": "产品",
+    "company": "公司",
+    "contact": "联系",
+    "links": {
+      "about": "关于我们",
+      "technology": "技术平台",
+      "applications": "应用",
+      "investors": "投资者",
+      "careers": "招聘",
       "privacy": "隐私政策",
       "terms": "服务条款",
       "legal": "法律"
-    }
+    },
+    "emailUser": "contact",
+    "emailDomain": "8xpet.com",
+    "rights": "© 2026 8xPet Medical Systems. 保留所有权利。"
   }
 }
